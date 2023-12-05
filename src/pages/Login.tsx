@@ -6,7 +6,7 @@ const Login: React.FC = () => {
     return (
     <IonPage>
         <IonContent >
-            <div className="card-center">
+            <div className="flex-center">
                 <IonCard>
                 <IonCardHeader>
                     <IonCardTitle>Food App</IonCardTitle>
@@ -18,9 +18,9 @@ const Login: React.FC = () => {
                         <IonItem>
                             <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****"></IonInput>
                         </IonItem>
-                        <IonButton expand="block">Log In</IonButton>
-                        <IonCardSubtitle>Don't have an Account</IonCardSubtitle>
-                        <IonButton fill="outline" expand="block" >Sign Up</IonButton>
+                        <IonButton id='button' expand="block">Log In</IonButton>
+                        <p>Don't have an Account</p>
+                        <IonButton id='button' fill="outline" expand="block" >Sign Up</IonButton>
                     </IonCardContent>
                     </IonCard>
             </div>
