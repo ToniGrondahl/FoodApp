@@ -6,7 +6,7 @@ const Search: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar color="tertiary">
           <IonTitle>Search</IonTitle>
         </IonToolbar>
       </IonHeader>

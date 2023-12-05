@@ -16,7 +16,10 @@ import Restaurants from './pages/restaurants';
 import Search from './pages/search';
 import Account from './pages/account';
 import Login from './pages/login&register/Login';
-import Register from './pages/login&register/Register'
+import Register from './pages/login&register/Register';
+import Settings from './pages/Account/Settings';
+import Contact from './pages/Account/Contact';
+import About from './pages/Account/About';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

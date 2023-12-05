@@ -6,7 +6,7 @@ const Restaurants: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar color="tertiary">
           <IonTitle>Restaurants</IonTitle>
         </IonToolbar>
       </IonHeader>

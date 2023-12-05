@@ -5,9 +5,9 @@ import './Account.css';
 const Account: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle>Account</IonTitle>
+            <IonHeader >
+                <IonToolbar color="tertiary">
+                    <IonTitle className="account" >Account</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
