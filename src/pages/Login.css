@@ -1,6 +1,14 @@
-.card-center {
-  width: 40%; /*adjust width on your ion-card suitable on your screen*/
-  display: block;
-  margin: 0 auto;
-  margin-top: auto;
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+p {
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+}
+#button {
+  padding: 2px;
 }
