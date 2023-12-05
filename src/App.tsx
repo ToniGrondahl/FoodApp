@@ -15,8 +15,8 @@ import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 import Account from './pages/Account';
-import Login from './pages/Login';
-import Register from './pages/Register'
+import Login from './pages/login&register/Login';
+import Register from './pages/login&register/Register'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

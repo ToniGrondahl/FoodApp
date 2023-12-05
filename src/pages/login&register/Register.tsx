@@ -13,7 +13,7 @@ const Register: React.FC = () => {
                 </IonCardHeader>
                     <IonCardContent>
                         <IonItem>
-                            <IonInput label="Username" type="text" labelPlacement="stacked" placeholder="example@gmail.com"></IonInput>
+                            <IonInput label="Username" type="text" labelPlacement="stacked" placeholder="username"></IonInput>
                         </IonItem>
                         <IonItem>
                             <IonInput label="Email" type="email" labelPlacement="stacked" placeholder="example@gmail.com"></IonInput>
