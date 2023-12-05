@@ -67,6 +67,10 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={square} />
             <IonLabel>Search</IonLabel>
           </IonTabButton>
+          <IonTabButton tab="tab4" href="/tab4">
+            <IonIcon aria-hidden="true" icon={square} />
+            <IonLabel>Account</IonLabel>
+          </IonTabButton>
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
