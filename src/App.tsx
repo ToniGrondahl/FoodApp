@@ -11,10 +11,10 @@ import {
 } from '@ionic/react';
 import { homeOutline, restaurantOutline, searchOutline, personOutline, } from 'ionicons/icons';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Account from './pages/Account';
 import Login from './pages/Login';
 import Register from './pages/Register'
 
@@ -58,6 +58,9 @@ const App: React.FC = () => (
           </Route>
           <Route path="/tab3">
             <Tab3 />
+          </Route>
+          <Route exact path="/tab4">
+            <Account />
           </Route>
           <Route exact path="/">
             <Redirect to="/tab1" />
