@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/react';
+import { logOutOutline } from 'ionicons/icons';
 import './Account.css';
 
 const Account: React.FC = () => {
@@ -16,8 +16,16 @@ const Account: React.FC = () => {
                         <IonTitle size="large">Account</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <ExploreContainer name="Account page" />
+                <IonList>
+                    <IonItem>Settings</IonItem>
+                    <IonItem>Contact</IonItem>
+                    <IonItem>About</IonItem>
+                </IonList>
             </IonContent>
+            <IonButton color="danger">
+                <IonIcon aria-hidden="true" icon={logOutOutline} />
+                Logout
+            </IonButton>
         </IonPage>
     );
 };
