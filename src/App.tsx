@@ -11,10 +11,10 @@ import {
 } from '@ionic/react';
 import { homeOutline, restaurantOutline, searchOutline, personOutline, } from 'ionicons/icons';
 import { IonReactRouter } from '@ionic/react-router';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
-import Account from './pages/Account';
+import Home from './pages/home';
+import Restaurants from './pages/restaurants';
+import Search from './pages/search';
+import Account from './pages/account';
 import Login from './pages/login&register/Login';
 import Register from './pages/login&register/Register'
 
@@ -50,36 +50,36 @@ const App: React.FC = () => (
           <Route exact path="/Register">
             <Register />
           </Route>
-          <Route exact path="/tab1">
-            <Tab1 />
+          <Route exact path="/home">
+            <Home />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/restaurants">
+            <Restaurants />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/search">
+            <Search />
           </Route>
-          <Route exact path="/tab4">
+          <Route exact path="/account">
             <Account />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/home" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="home" href="/home">
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="restaurants" href="/restaurants">
             <IonIcon aria-hidden="true" icon={restaurantOutline} />
             <IonLabel>Restaurants</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="search" href="search">
             <IonIcon aria-hidden="true" icon={searchOutline} />
             <IonLabel>Search</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="account" href="/account">
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Account</IonLabel>
           </IonTabButton>

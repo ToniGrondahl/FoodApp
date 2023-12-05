@@ -17,9 +17,9 @@ const Account: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
                 <IonList>
-                    <IonItem>Settings</IonItem>
-                    <IonItem>Contact</IonItem>
-                    <IonItem>About</IonItem>
+                    <IonItem routerLink='/account/settings' expand="full"> Settings </IonItem>
+                    <IonItem routerLink='/account/contact' expand="full"> Contact </IonItem>
+                    <IonItem routerLink='/account/about' expand="full"> About </IonItem>
                 </IonList>
             </IonContent>
             <IonButton color="danger">
