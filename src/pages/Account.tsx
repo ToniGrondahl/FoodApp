@@ -1,10 +1,57 @@
-import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/react';
-import { callOutline, helpCircleOutline, logOutOutline, settingsOutline } from 'ionicons/icons';
+import { useState, useRef, useEffect, } from 'react';
+import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal } from '@ionic/react';
+import { callOutline, helpCircleOutline, logOutOutline, settingsOutline, } from 'ionicons/icons';
+import { useHistory } from 'react-router-dom';
 import './Account.css';
 
-const Account: React.FC = () => {
+
+function Account() {
+    const modal = useRef<HTMLIonModalElement>(null);
+    const page = useRef(null);
+    const history = useHistory();
+
+    const [presentingElement, setPresentingElement] = useState<HTMLElement | null>(null);
+    const [present] = useIonActionSheet();
+
+    useEffect(() => {
+        setPresentingElement(page.current);
+    }, []);
+
+    function dismiss() {
+        modal.current?.dismiss();
+    }
+
+    function canDismiss() {
+        return new Promise<boolean>((resolve, reject) => {
+            present({
+                header: 'Are you sure you want to log out?',
+                buttons: [
+                    {
+                        text: 'Yes',
+                        role: 'confirm',
+                    },
+                    {
+                        text: 'No',
+                        role: 'cancel',
+                    },
+                ],
+                onWillDismiss: (ev) => {
+                    if (ev.detail.role === 'confirm') {
+                        resolve(true);
+                    } else {
+                        reject();
+                    }
+                },
+            }
+            );
+        }).then(() => {
+            // Redirect to the desired page after clicking "Yes"
+            history.push('/login');
+        });
+    }
+
     return (
-        <IonPage>
+        <IonPage ref={page}>
             <IonHeader >
                 <IonToolbar color="tertiary">
                     <IonTitle className="account" >Account</IonTitle>
@@ -12,9 +59,6 @@ const Account: React.FC = () => {
             </IonHeader>
             <IonContent fullscreen>
                 <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">Account</IonTitle>
-                    </IonToolbar>
                 </IonHeader>
                 <IonList>
                     <IonItem routerLink='/account/settings' expand="full"> <IonIcon className="settings" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
@@ -22,10 +66,13 @@ const Account: React.FC = () => {
                     <IonItem routerLink='/account/about' expand="full"> <IonIcon className="about" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
                 </IonList>
             </IonContent>
-            <IonButton className="logout-button" color="danger">
+
+            <IonModal ref={modal} trigger="open-modal" canDismiss={canDismiss} presentingElement={presentingElement!}></IonModal>
+            <IonButton onClick={() => dismiss()} className="logout-button" expand="block" color="danger">
                 <IonIcon className="logout" aria-hidden="true" icon={logOutOutline} />
                 Logout
             </IonButton>
+
         </IonPage>
     );
 };

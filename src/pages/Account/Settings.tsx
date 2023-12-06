@@ -9,8 +9,9 @@ import {
     IonToggle,
     IonButton,
     IonBackButton,
-    IonText,
+    IonIcon,
 } from '@ionic/react'
+import { moonOutline, notificationsOutline, textOutline } from 'ionicons/icons';
 
 const Settings: React.FC = () => {
     return (
@@ -22,7 +23,7 @@ const Settings: React.FC = () => {
             </IonHeader>
             <IonContent>
                 <IonButton slot='start'>
-                    <IonBackButton defaultHref="/app/page1" />
+                    <IonBackButton defaultHref="/account" />
                 </IonButton>
                 <IonList>
                     <IonItem>
@@ -30,7 +31,26 @@ const Settings: React.FC = () => {
                             color="tertiary"
                             aria-label="Tertiary toggle"
                             justify='space-between'>
+                            <IonIcon className='dark-mode' icon={moonOutline} ></IonIcon>
                             Dark Mode
+                        </IonToggle>
+                    </IonItem>
+                    <IonItem>
+                        <IonToggle
+                            color="tertiary"
+                            aria-label='Tertiary toggle'
+                            justify='space-between'>
+                            <IonIcon className='notificiations' icon={notificationsOutline} ></IonIcon>
+                            Enable push notifications
+                        </IonToggle>
+                    </IonItem>
+                    <IonItem>
+                        <IonToggle
+                            color="tertiary"
+                            aria-label='Tertiary toggle'
+                            justify='space-between'>
+                            <IonIcon className='bigger-font' icon={textOutline} ></IonIcon>
+                            Bigger font
                         </IonToggle>
                     </IonItem>
                 </IonList>

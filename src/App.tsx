@@ -11,10 +11,10 @@ import {
 } from '@ionic/react';
 import { homeOutline, restaurantOutline, searchOutline, personOutline, } from 'ionicons/icons';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/home';
-import Restaurants from './pages/restaurants';
-import Search from './pages/search';
-import Account from './pages/account';
+import Home from './pages/Home';
+import Restaurants from './pages/Restaurants';
+import Search from './pages/Search';
+import Account from './pages/Account';
 import Login from './pages/login&register/Login';
 import Register from './pages/login&register/Register';
 import Settings from './pages/Account/Settings';
@@ -64,6 +64,15 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/account">
             <Account />
+            <Route exact path="/account/settings">
+              <Settings />
+            </Route>
+            <Route exact path="/account/contact">
+              <Contact />
+            </Route>
+            <Route exact path="/account/about">
+              <About />
+            </Route>
           </Route>
           <Route exact path="/">
             <Redirect to="/home" />
@@ -78,7 +87,7 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={restaurantOutline} />
             <IonLabel>Restaurants</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="search" href="search">
+          <IonTabButton tab="search" href="/search">
             <IonIcon aria-hidden="true" icon={searchOutline} />
             <IonLabel>Search</IonLabel>
           </IonTabButton>
