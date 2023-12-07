@@ -6,23 +6,25 @@ import {
     IonContent,
     IonList,
     IonButton,
-    IonBackButton,
+    IonIcon
 } from '@ionic/react'
+import { chevronBackOutline } from 'ionicons/icons';
+import './About.css';
 
 const About: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
-                <IonToolbar color="tertiary">
-                    <IonTitle>Settings</IonTitle>
+                <IonToolbar color="light">
+                    <IonButton routerLink='/account' slot="start" color="light">
+                        <IonIcon className="arrow" size="large" icon={chevronBackOutline} />
+                    </IonButton>
+                    <IonTitle className='about'>About</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonButton slot='start'>
-                    <IonBackButton defaultHref="/account" />
-                </IonButton>
-                <IonList>
-                    diibadaaba
+                <IonList className='yapping'>Our restaurant app is designed to find restaurants and place orders in them.
+                    It was founded and created by four friends who wanted to make finding restaurants and ordering from them more convenient.
                 </IonList>
             </IonContent>
         </IonPage>

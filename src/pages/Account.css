@@ -1,13 +1,28 @@
+.settings-icon {
+    padding-right: 10px;
+    font-size: 24px;
+}
+
 .settings {
-    margin-right: 10px;
+    font-size: large;
+}
+
+.phone-icon {
+    padding-right: 10px;
+    font-size: 24px;
 }
 
 .contact {
-    margin-right: 10px;
+    font-size: large;
+}
+
+.about-icon {
+    padding-right: 10px;
+    font-size: 28px;
 }
 
 .about {
-    margin-right: 10px;
+    font-size: large;
 }
 
 .logout {
@@ -22,4 +37,10 @@
 
 .account {
     text-align: center;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.toolbar {
+    padding-bottom: 26px;
 }

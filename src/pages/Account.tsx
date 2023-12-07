@@ -54,18 +54,18 @@ function Account() {
     return (
         <IonPage ref={page}>
             <IonHeader >
-                <IonToolbar color="tertiary">
+                <IonToolbar className="toolbar" color="tertiary">
                     <IonTitle className="account" >Account</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
                 <IonList>
-                    <IonItem routerLink='account/settings'> <IonIcon className="settings" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
+                    <IonItem className='settings' routerLink='account/settings'> <IonIcon className="settings-icon" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
                     <IonRouterOutlet>
                         <Route path="account/settings" component={Settings} />
                     </IonRouterOutlet>
-                    <IonItem routerLink='account/contact'> <IonIcon className="contact" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
-                    <IonItem routerLink='account/about'> <IonIcon className="about" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
+                    <IonItem className='contact' routerLink='account/contact'> <IonIcon className="phone-icon" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
+                    <IonItem className='about' routerLink='account/about'> <IonIcon className="about-icon" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
                 </IonList>
             </IonContent>
 

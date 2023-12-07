@@ -15,9 +15,6 @@ const Settings: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonButton slot='start'>
-                    <IonBackButton defaultHref="/account" />
-                </IonButton>
                 <IonList>
                     <IonItem className='DarkMode'>
                         <IonToggle

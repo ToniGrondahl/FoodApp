@@ -1,0 +1,29 @@
+.contact {
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.phone-icon {
+    padding-right: 10px;
+}
+
+.phone {
+    font-size: large;
+}
+
+.email-icon {
+    padding-right: 10px;
+}
+
+.email {
+    font-size: large;
+}
+
+.mail-icon {
+    padding-right: 10px;
+}
+
+.mail {
+    font-size: large;
+}

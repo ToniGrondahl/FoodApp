@@ -1,13 +1,16 @@
-import { IonButton, IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/react';
-import { callOutline, locationOutline, mailOutline, } from 'ionicons/icons';
+import { IonButton, IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon, IonLabel } from '@ionic/react';
+import { callOutline, locationOutline, mailOutline, chevronBackOutline } from 'ionicons/icons';
 import './Contact.css';
 
 const Contact: React.FC = () => {
     return (
         <IonPage>
             <IonHeader >
-                <IonToolbar color="tertiary">
-                    <IonTitle className="contact" >Contact</IonTitle>
+                <IonToolbar color="light">
+                    <IonButton routerLink='/account' slot="start" color="light">
+                        <IonIcon className="arrow" size="large" icon={chevronBackOutline} />
+                    </IonButton>
+                    <IonTitle className="contact">Contact</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
@@ -17,14 +20,11 @@ const Contact: React.FC = () => {
                     </IonToolbar>
                 </IonHeader>
                 <IonList>
-                    <IonItem> <IonIcon className="phone" aria-hidden="true" icon={callOutline} /> Phone Support </IonItem>
-                    <IonItem> <IonIcon className="email" aria-hidden="true" icon={mailOutline} />  Email </IonItem>
-                    <IonItem> <IonIcon className="mail" aria-hidden="true" icon={locationOutline} /> Mail </IonItem>
+                    <IonItem className="phone"> <IonIcon className="phone-icon" aria-hidden="true" icon={callOutline} /> Phone Support </IonItem>
+                    <IonItem className='email'> <IonIcon className="email-icon" aria-hidden="true" icon={mailOutline} />  Email </IonItem>
+                    <IonItem className='mail'> <IonIcon className="mail-icon" aria-hidden="true" icon={locationOutline} /> Mail Address </IonItem>
                 </IonList>
             </IonContent>
-            <IonButton slot='start'>
-                <IonBackButton defaultHref="/account" />
-            </IonButton>
         </IonPage>
     );
 };
