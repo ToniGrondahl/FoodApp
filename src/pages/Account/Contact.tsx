@@ -1,5 +1,5 @@
-import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/react';
-import { callOutline, locationOutline, logOutOutline, mailOutline, } from 'ionicons/icons';
+import { IonButton, IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon } from '@ionic/react';
+import { callOutline, locationOutline, mailOutline, } from 'ionicons/icons';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -22,9 +22,8 @@ const Contact: React.FC = () => {
                     <IonItem> <IonIcon className="mail" aria-hidden="true" icon={locationOutline} /> Mail </IonItem>
                 </IonList>
             </IonContent>
-            <IonButton className="logout-button" color="danger">
-                <IonIcon className="logout" aria-hidden="true" icon={logOutOutline} />
-                Logout
+            <IonButton slot='start'>
+                <IonBackButton defaultHref="/account" />
             </IonButton>
         </IonPage>
     );

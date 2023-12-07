@@ -19,7 +19,7 @@ const About: React.FC = () => {
             </IonHeader>
             <IonContent>
                 <IonButton slot='start'>
-                    <IonBackButton defaultHref="/app/page1" />
+                    <IonBackButton defaultHref="/account" />
                 </IonButton>
                 <IonList>
                     diibadaaba

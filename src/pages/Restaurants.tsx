@@ -7,7 +7,7 @@ const Restaurants: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar color="tertiary">
-          <IonTitle>Restaurants</IonTitle>
+          <IonTitle className='restaurants'>Restaurants</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

@@ -7,7 +7,7 @@ const Search: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar color="tertiary">
-          <IonTitle>Search</IonTitle>
+          <IonTitle className='search'>Search</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

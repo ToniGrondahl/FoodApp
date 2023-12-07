@@ -61,9 +61,9 @@ function Account() {
                 <IonHeader collapse="condense">
                 </IonHeader>
                 <IonList>
-                    <IonItem routerLink='/account/settings' expand="full"> <IonIcon className="settings" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
-                    <IonItem routerLink='/account/contact' expand="full"> <IonIcon className="contact" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
-                    <IonItem routerLink='/account/about' expand="full"> <IonIcon className="about" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
+                    <IonItem routerLink='/account/settings'> <IonIcon className="settings" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
+                    <IonItem routerLink='/account/contact'> <IonIcon className="contact" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
+                    <IonItem routerLink='/account/about'> <IonIcon className="about" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
                 </IonList>
             </IonContent>
 

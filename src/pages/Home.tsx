@@ -9,13 +9,13 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar color="tertiary">
-          <IonTitle>Home</IonTitle>
+          <IonTitle className='home'>Home</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
 
         <IonToolbar>
-          <IonTitle>Recomended Restaurants</IonTitle>
+          <IonTitle>Recommended Restaurants</IonTitle>
         </IonToolbar>
 
         <IonCard>
