@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect, } from 'react';
-import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal, IonRouterOutlet, IonLabel, } from '@ionic/react';
 import { callOutline, helpCircleOutline, logOutOutline, settingsOutline, } from 'ionicons/icons';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Route } from 'react-router-dom';
 import './Account.css';
+import Settings from './Account/Settings';
 
 
 function Account() {
@@ -58,12 +59,13 @@ function Account() {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                </IonHeader>
                 <IonList>
-                    <IonItem routerLink='/account/settings'> <IonIcon className="settings" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
-                    <IonItem routerLink='/account/contact'> <IonIcon className="contact" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
-                    <IonItem routerLink='/account/about'> <IonIcon className="about" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
+                    <IonItem routerLink='account/settings'> <IonIcon className="settings" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
+                    <IonRouterOutlet>
+                        <Route path="account/settings" component={Settings} />
+                    </IonRouterOutlet>
+                    <IonItem routerLink='account/contact'> <IonIcon className="contact" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
+                    <IonItem routerLink='account/about'> <IonIcon className="about" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
                 </IonList>
             </IonContent>
 

@@ -60,7 +60,12 @@
     font-size: 24px;
 }
 
-.orderbutton {
-    padding-left: 20px;
+.center-button {
+    text-align: center;
+}
+
+.order-button {
     width: 400px;
+    height: 50px;
+    font-size: large;
 }

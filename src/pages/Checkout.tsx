@@ -59,7 +59,9 @@ const Checkout: React.FC = () => {
                             justify="space-between"> Non-contact-delivery </IonToggle>
                     </IonItem>
                 </IonList>
-                <IonButton className="orderbutton" color="success">ORDER</IonButton>
+                <div className="center-button">
+                    <IonButton className="order-button" color="success">ORDER</IonButton>
+                </div>
             </IonContent>
         </IonPage >
     );

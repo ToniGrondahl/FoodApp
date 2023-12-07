@@ -76,15 +76,15 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/account">
             <Account />
-            <Route exact path="/account/settings">
-              <Settings />
-            </Route>
-            <Route exact path="/account/contact">
-              <Contact />
-            </Route>
-            <Route exact path="/account/about">
-              <About />
-            </Route>
+          </Route>
+          <Route exact path="/account/settings">
+            <Settings />
+          </Route>
+          <Route exact path="/account/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/account/about">
+            <About />
           </Route>
           <Route exact path="/">
             <Redirect to="/home" />
