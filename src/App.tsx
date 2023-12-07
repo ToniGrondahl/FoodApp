@@ -20,6 +20,9 @@ import Register from './pages/login&register/Register';
 import Settings from './pages/Account/Settings';
 import Contact from './pages/Account/Contact';
 import About from './pages/Account/About';
+import Checkout from './pages/Checkout';
+import Paymentmethod from './pages/Paymentmethod';
+import Deliveryaddress from './pages/Deliveryaddress';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -58,6 +61,15 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/restaurants">
             <Restaurants />
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout />
+          </Route>
+          <Route exact path="/paymentmethod">
+            <Paymentmethod />
+          </Route>
+          <Route exact path="/deliveryaddress">
+            <Deliveryaddress />
           </Route>
           <Route path="/search">
             <Search />

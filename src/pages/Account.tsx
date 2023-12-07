@@ -67,6 +67,7 @@ function Account() {
                 </IonList>
             </IonContent>
 
+
             <IonModal ref={modal} trigger="open-modal" canDismiss={canDismiss} presentingElement={presentingElement!}></IonModal>
             <IonButton onClick={() => dismiss()} className="logout-button" expand="block" color="danger">
                 <IonIcon className="logout" aria-hidden="true" icon={logOutOutline} />
