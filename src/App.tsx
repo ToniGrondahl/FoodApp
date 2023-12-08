@@ -23,6 +23,7 @@ import About from './pages/Account/About';
 import Checkout from './pages/Checkout';
 import Paymentmethod from './pages/Paymentmethod';
 import Deliveryaddress from './pages/Deliveryaddress';
+import JouninKeitto from './pages/JouninKeitto';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
