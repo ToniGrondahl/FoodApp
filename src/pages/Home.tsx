@@ -25,77 +25,71 @@ const Home: React.FC = () => {
             <IonCardSubtitle color="tertiary">Feels like you are in UK</IonCardSubtitle>
           </IonCardHeader>
           <IonItem>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={starOutline}></IonIcon>
-            <IonIcon icon={starOutline}></IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
+            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
           </IonItem>
-
-
         </IonCard>
 
         <IonCard>
-
           <IonCardHeader>
             <img src='images/keittoa.jpeg' alt='keittoa' />
             <IonCardTitle>Jouni's soup corner</IonCardTitle>
             <IonCardSubtitle color="tertiary">Mouth watering soups since 1998</IonCardSubtitle>
           </IonCardHeader>
           <IonItem>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={starHalf} color="yellow"></IonIcon>
-            <IonIcon icon={starOutline}></IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='puoliStara' icon={starHalf} ></IonIcon>
+            <IonIcon className='tyhjaStara' icon={star}></IonIcon>
           </IonItem>
         </IonCard>
 
         <IonCard>
-
           <IonCardHeader>
             <img src='images/pizzza.jpeg' alt='pizza' />
             <IonCardTitle>Antalanya pizzeria</IonCardTitle>
             <IonCardSubtitle color="tertiary">Best pizza in Finland</IonCardSubtitle>
           </IonCardHeader>
           <IonItem>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
           </IonItem>
         </IonCard>
 
         <IonCard>
-
           <IonCardHeader>
             <img src='images/sushi.jpg' alt='sushi' />
             <IonCardTitle>King sushi</IonCardTitle>
             <IonCardSubtitle color="tertiary">Fresh everyday</IonCardSubtitle>
           </IonCardHeader>
           <IonItem>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={starOutline}></IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
           </IonItem>
         </IonCard>
 
         <IonCard>
-
           <IonCardHeader>
             <img src='images/kahvila.jpg' alt='kahvila' />
             <IonCardTitle>Cafe Ursus</IonCardTitle>
             <IonCardSubtitle color="tertiary">Hot coffee and fresh pasteries</IonCardSubtitle>
           </IonCardHeader>
           <IonItem>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
-            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
+            <IonIcon className='stara' icon={star} > </IonIcon>
           </IonItem>
         </IonCard>
 
