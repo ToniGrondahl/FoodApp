@@ -1,6 +1,6 @@
 import React from 'react';
-import { star } from 'ionicons/icons';
-import { IonContent, IonHeader, IonCardContent, IonPage, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon } from '@ionic/react';
+import { star, starHalf, starOutline } from 'ionicons/icons';
+import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
@@ -19,48 +19,84 @@ const Home: React.FC = () => {
         </IonToolbar>
 
         <IonCard>
-          <img src='images/kalasipsi.jpeg' alt='fishChips' />
           <IonCardHeader>
+            <img src='images/kalasipsi.jpeg' alt='fishChips' />
             <IonCardTitle>Authentic Fish&Chips</IonCardTitle>
             <IonCardSubtitle color="tertiary">Feels like you are in UK</IonCardSubtitle>
-            <IonIcon icon={star} color="gold"> </IonIcon>
-            <IonIcon icon={star} color="gold"> </IonIcon>
-            <IonIcon icon={star} color="gold"> </IonIcon>
-
-
           </IonCardHeader>
+          <IonItem>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={starOutline}></IonIcon>
+            <IonIcon icon={starOutline}></IonIcon>
+          </IonItem>
+
+
         </IonCard>
 
         <IonCard>
-          <img src='images/keittoa.jpeg' alt='keittoa' />
+
           <IonCardHeader>
+            <img src='images/keittoa.jpeg' alt='keittoa' />
             <IonCardTitle>Jouni's soup corner</IonCardTitle>
             <IonCardSubtitle color="tertiary">Mouth watering soups since 1998</IonCardSubtitle>
           </IonCardHeader>
+          <IonItem>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={starHalf} color="yellow"></IonIcon>
+            <IonIcon icon={starOutline}></IonIcon>
+          </IonItem>
         </IonCard>
 
         <IonCard>
-          <img src='images/pizzza.jpeg' alt='pizza' />
+
           <IonCardHeader>
+            <img src='images/pizzza.jpeg' alt='pizza' />
             <IonCardTitle>Antalanya pizzeria</IonCardTitle>
             <IonCardSubtitle color="tertiary">Best pizza in Finland</IonCardSubtitle>
           </IonCardHeader>
+          <IonItem>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+          </IonItem>
         </IonCard>
 
         <IonCard>
-          <img src='images/sushi.jpg' alt='sushi' />
+
           <IonCardHeader>
+            <img src='images/sushi.jpg' alt='sushi' />
             <IonCardTitle>King sushi</IonCardTitle>
             <IonCardSubtitle color="tertiary">Fresh everyday</IonCardSubtitle>
           </IonCardHeader>
+          <IonItem>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={starOutline}></IonIcon>
+          </IonItem>
         </IonCard>
 
         <IonCard>
-          <img src='images/kahvila.jpg' alt='kahvila' />
+
           <IonCardHeader>
+            <img src='images/kahvila.jpg' alt='kahvila' />
             <IonCardTitle>Cafe Ursus</IonCardTitle>
             <IonCardSubtitle color="tertiary">Hot coffee and fresh pasteries</IonCardSubtitle>
           </IonCardHeader>
+          <IonItem>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+            <IonIcon icon={star} color="yellow"> </IonIcon>
+          </IonItem>
         </IonCard>
 
 
@@ -69,7 +105,7 @@ const Home: React.FC = () => {
 
 
       </IonContent>
-    </IonPage>
+    </IonPage >
   );
 };
 
