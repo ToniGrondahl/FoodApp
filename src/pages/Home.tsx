@@ -78,20 +78,7 @@ const Home: React.FC = () => {
           </IonItem>
         </IonCard>
 
-        <IonCard>
-          <IonCardHeader>
-            <img src='images/kahvila.jpg' alt='kahvila' />
-            <IonCardTitle>Cafe Ursus</IonCardTitle>
-            <IonCardSubtitle color="tertiary">Hot coffee and fresh pasteries</IonCardSubtitle>
-          </IonCardHeader>
-          <IonItem>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-          </IonItem>
-        </IonCard>
+
 
 
 
