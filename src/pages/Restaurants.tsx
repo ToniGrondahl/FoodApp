@@ -74,7 +74,8 @@ const Home: React.FC = () => {
             <IonCard className="cardsize">
               <img src='images/sushi.jpg' alt='sushi' className='images' />
           <IonCardHeader>
-            <IonCardTitle className='header'>King sushi</IonCardTitle>
+            <IonCardTitle className='headerSmall'>King sushi</IonCardTitle>
+            
             <IonItem lines='none'>
             <IonIcon icon={star} size='small' className='stara'> </IonIcon>
             <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -93,7 +94,7 @@ const Home: React.FC = () => {
             <IonCard className="cardsize">
             <img src='images/kahvila.jpg' alt='kahvila' className='images' />
           <IonCardHeader>
-            <IonCardTitle className='header'>Cafe Ursus</IonCardTitle>
+            <IonCardTitle className='headerSmall'>Cafe Ursus</IonCardTitle>
            
             <IonItem lines='none'>
             <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -112,13 +113,13 @@ const Home: React.FC = () => {
             <IonCard className="cardsize">
               <img src='images/Tartarillas.jpeg' alt='Tartarilla' className='images' />
           <IonCardHeader>
-            <IonCardTitle className='header'>Tartarilla's</IonCardTitle>
+            <IonCardTitle className='headerSmall'>Tartarilla's</IonCardTitle>
             <IonItem lines='none'>
             <IonIcon icon={star} size='small' className='stara'> </IonIcon>
             <IonIcon icon={star} size='small' className='stara'> </IonIcon>
             <IonIcon icon={star} size='small' className='stara'> </IonIcon>
             <IonIcon icon={star} size='small' className='stara'></IonIcon>
-            <IonIcon icon={starOutline} size='small' className='tyhjaStara'></IonIcon>
+            <IonIcon icon={starOutline} size='small' className='stara'></IonIcon>
           </IonItem>
           </IonCardHeader>
             <IonButton expand="block" color="success" size="small" className='buttoninfo'>Info</IonButton>
