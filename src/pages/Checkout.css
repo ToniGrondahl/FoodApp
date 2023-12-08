@@ -46,22 +46,32 @@
     font-size: 20px;
 }
 
-.pickup {
+.pickup-icon {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 24px;
 }
 
-.courier {
+.pickup {
+    cursor: pointer;
+}
+
+.courier-icon {
     padding-top: 25px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 24px;
 }
 
+.courier {
+    cursor: pointer;
+}
+
 .center-button {
     text-align: center;
+    background-color: white;
+    padding-bottom: 20px;
 }
 
 .order-button {
