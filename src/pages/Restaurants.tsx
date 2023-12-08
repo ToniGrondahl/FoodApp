@@ -23,11 +23,11 @@ const Home: React.FC = () => {
           <IonCardHeader>
             <IonCardTitle className='header'>Authentic Fish&Chips</IonCardTitle>
             <IonItem lines='none'>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={starOutline} size='small'></IonIcon>
-            <IonIcon icon={starOutline} size='small'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={starOutline} size='small' className='tyhjaStara'></IonIcon>
+            <IonIcon icon={starOutline} size='small' className='tyhjaStara'></IonIcon>
           </IonItem>
          </IonCardHeader>
             <IonButton expand="block" color="success" size="small" className='buttoninfo'>Info</IonButton>
@@ -40,11 +40,11 @@ const Home: React.FC = () => {
           <IonCardHeader>
             <IonCardTitle className='header'>Jouni's soup corner</IonCardTitle>
             <IonItem lines='none'>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={starHalf} size='small'></IonIcon>
-            <IonIcon icon={starOutline} size='small'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={starHalf} size='small' className='puoliStara'></IonIcon>
+            <IonIcon icon={starOutline} size='small' className='tyhjaStara'></IonIcon>
           </IonItem>
           </IonCardHeader>
             <IonButton expand="block" color="success" size="small" className='buttoninfo'>Info</IonButton>
@@ -59,11 +59,11 @@ const Home: React.FC = () => {
           <IonCardHeader>
           <IonCardTitle className='header'>Antalanya Pizza</IonCardTitle>
           <IonItem lines='none'>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'></IonIcon>
-            <IonIcon icon={star} size='small'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'></IonIcon>
           </IonItem>
           </IonCardHeader>
             <IonButton expand="block" color="success" size="small" className='buttoninfo'>Info</IonButton>
@@ -76,11 +76,11 @@ const Home: React.FC = () => {
           <IonCardHeader>
             <IonCardTitle className='header'>King sushi</IonCardTitle>
             <IonItem lines='none'>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'></IonIcon>
-            <IonIcon icon={starOutline} size='small'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'></IonIcon>
+            <IonIcon icon={starOutline} size='small' className='tyhjaStara'></IonIcon>
           </IonItem>
           </IonCardHeader>
             <IonButton expand="block" color="success" size="small" className='buttoninfo'>Info</IonButton>
@@ -96,11 +96,11 @@ const Home: React.FC = () => {
             <IonCardTitle className='header'>Cafe Ursus</IonCardTitle>
            
             <IonItem lines='none'>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'></IonIcon>
-            <IonIcon icon={star} size='small'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'></IonIcon>
           </IonItem>
           </IonCardHeader>
           
@@ -114,11 +114,11 @@ const Home: React.FC = () => {
           <IonCardHeader>
             <IonCardTitle className='header'>Tartarilla's</IonCardTitle>
             <IonItem lines='none'>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'> </IonIcon>
-            <IonIcon icon={star} size='small'></IonIcon>
-            <IonIcon icon={starOutline} size='small'></IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'> </IonIcon>
+            <IonIcon icon={star} size='small' className='stara'></IonIcon>
+            <IonIcon icon={starOutline} size='small' className='tyhjaStara'></IonIcon>
           </IonItem>
           </IonCardHeader>
             <IonButton expand="block" color="success" size="small" className='buttoninfo'>Info</IonButton>

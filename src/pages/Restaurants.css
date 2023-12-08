@@ -28,7 +28,19 @@ img {
 
 .header {
 
-    text-align: center;
+   text-align: center;
+}
+
+.stara {
+    color: yellow;
+}
+
+.tyhjaStara {
+    color: gray;
+}
+
+.puoliStara {
+    color: yellow;
 }
 
 
