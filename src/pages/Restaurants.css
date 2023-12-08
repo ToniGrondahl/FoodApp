@@ -1,3 +1,55 @@
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
 .restaurants {
     text-align: center;
 }
+
+.cardsize {
+
+    width: 175px;
+    height: 300px;
+    
+
+    border-radius: 6%;
+}
+
+.images {
+
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+
+    text-align: center;
+}
+
+.desc {
+
+    text-align: center;
+}
+
+.buttoninfo {
+
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.buttonmenu {
+
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    padding-top: 5px;
+}
+
