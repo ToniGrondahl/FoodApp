@@ -3,8 +3,16 @@ img {
     width: 100px;
 }
 
-.IonIcon {
-    position: relative;
+.stara {
+    color: yellow;
+}
+
+.tyhjaStara {
+    color: gray;
+}
+
+.puoliStara {
+    color: yellow;
 }
 
 .home {
