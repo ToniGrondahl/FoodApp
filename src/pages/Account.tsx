@@ -1,9 +1,8 @@
 import { useState, useRef, useEffect, } from 'react';
 import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal, IonRouterOutlet, IonLabel, } from '@ionic/react';
 import { callOutline, helpCircleOutline, logOutOutline, settingsOutline, } from 'ionicons/icons';
-import { useHistory, Route } from 'react-router-dom';
+import { useHistory, } from 'react-router-dom';
 import './Account.css';
-import Settings from './Account/Settings';
 
 
 function Account() {
@@ -59,11 +58,8 @@ function Account() {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonList>
+                <IonList inset={true}>
                     <IonItem className='settings' routerLink='account/settings'> <IonIcon className="settings-icon" aria-hidden="true" icon={settingsOutline} /> Settings </IonItem>
-                    <IonRouterOutlet>
-                        <Route path="account/settings" component={Settings} />
-                    </IonRouterOutlet>
                     <IonItem className='contact' routerLink='account/contact'> <IonIcon className="phone-icon" aria-hidden="true" icon={callOutline} />  Contact </IonItem>
                     <IonItem className='about' routerLink='account/about'> <IonIcon className="about-icon" aria-hidden="true" icon={helpCircleOutline} /> About </IonItem>
                 </IonList>
