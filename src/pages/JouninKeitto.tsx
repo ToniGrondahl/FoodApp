@@ -1,10 +1,11 @@
 import React from 'react';
 import { star, starHalf, starOutline } from 'ionicons/icons';
 import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+
+
 import './Menu.css';
 
-const JouninKeitto: React.FC = () => {
+const Home: React.FC = () => {
     return (
         <IonPage>
             <IonHeader>
@@ -31,4 +32,4 @@ const JouninKeitto: React.FC = () => {
     );
 };
 
-export default JouninKeitto;
+export default Home;
