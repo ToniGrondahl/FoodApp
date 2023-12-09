@@ -22,7 +22,7 @@ const About: React.FC = () => {
                     <IonTitle className='about'>About</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent>
+            <IonContent className='content'>
                 <IonList className='yapping'>Our restaurant app is designed to find restaurants and place orders in them.
                     It was founded and created by four friends who wanted to make finding restaurants and ordering from them more convenient.
                 </IonList>

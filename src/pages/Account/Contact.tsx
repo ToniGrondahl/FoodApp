@@ -1,5 +1,5 @@
-import { IonButton, IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon, IonLabel } from '@ionic/react';
-import { callOutline, locationOutline, mailOutline, chevronBackOutline } from 'ionicons/icons';
+import { IonButton, IonBackButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, IonIcon, IonLabel, IonText } from '@ionic/react';
+import { callOutline, locationOutline, mailOutline, chevronBackOutline, } from 'ionicons/icons';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -14,15 +14,14 @@ const Contact: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">Contact</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
                 <IonList>
-                    <IonItem className="phone"> <IonIcon className="phone-icon" aria-hidden="true" icon={callOutline} /> Phone Support </IonItem>
-                    <IonItem className='email'> <IonIcon className="email-icon" aria-hidden="true" icon={mailOutline} />  Email </IonItem>
-                    <IonItem className='mail'> <IonIcon className="mail-icon" aria-hidden="true" icon={locationOutline} /> Mail Address </IonItem>
+                    <IonItem className="phone" lines='none'> <IonIcon className="phone-icon" aria-hidden="true" icon={callOutline} /> Phone Support </IonItem>
+                    <IonText className='number'>050 1234567</IonText>
+                    <IonItem className='email' lines='none'> <IonIcon className="email-icon" aria-hidden="true" icon={mailOutline} />  Email </IonItem>
+                    <IonText className='email-address'>support@foodapp.com</IonText>
+                    <IonItem className='mail' lines='none'> <IonIcon className="mail-icon" aria-hidden="true" icon={locationOutline} /> Mail Address </IonItem>
+                    <IonText className='street'>123 Imaginary street</IonText>
+                    <div><IonText className='city'>Helsinki, 00100 Finland</IonText></div>
                 </IonList>
             </IonContent>
         </IonPage>

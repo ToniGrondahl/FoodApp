@@ -3,9 +3,9 @@
     text-align: center;
 }
 
-
 .phone-icon {
     padding-right: 10px;
+    font-size: 30px;
 }
 
 .phone {
@@ -14,6 +14,7 @@
 
 .email-icon {
     padding-right: 10px;
+    font-size: 30px;
 }
 
 .email {
@@ -22,8 +23,25 @@
 
 .mail-icon {
     padding-right: 10px;
+    font-size: 30px;
 }
 
 .mail {
     font-size: large;
+}
+
+.street {
+    padding-left: 55px;
+}
+
+.city {
+    padding-left: 56px;
+}
+
+.number {
+    padding-left: 55px;
+}
+
+.email-address {
+    padding-left: 55px;
 }
