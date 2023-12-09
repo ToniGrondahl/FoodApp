@@ -6,26 +6,77 @@ import {
     IonContent,
     IonList,
     IonItem,
-    IonToggle,
     IonButton,
-    IonBackButton,
     IonIcon,
 } from '@ionic/react'
-import { } from 'ionicons/icons';
+import { chevronBackOutline } from 'ionicons/icons';
+import './Paymentmethod.css'
+import 'react-credit-cards-2/dist/es/styles-compiled.css';
+import React, { useState, } from 'react';
+import Cards from 'react-credit-cards-2';
 
-const Paymentmethod: React.FC = () => {
+
+const PaymentMethod = () => {
+    const [state, setState] = useState({
+        number: '',
+        expiry: '',
+        cvc: '',
+        name: '',
+        focus: '',
+    });
+
+    const handleInputChange = (evt: { target: { name: any; value: any; }; }) => {
+        const { name, value } = evt.target;
+
+        setState((prev) => ({ ...prev, [name]: value }));
+    }
+
+    const handleInputFocus = (evt: { target: { name: any; value: any; }; }) => {
+        setState((prev) => ({ ...prev, focus: evt.target.name }));
+    }
+
     return (
+
         <IonPage>
             <IonHeader>
-                <IonToolbar color="tertiary">
-                    <IonTitle>Payment method</IonTitle>
+                <IonToolbar color="light">
+                    <IonButton slot="start" color="light" routerLink='/checkout'>
+                        <IonIcon className="arrow" size="large" icon={chevronBackOutline} />
+                    </IonButton>
+                    <IonTitle className="payment method">Payment method</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent>
+            <IonContent fullscreen className='content'>
+                <IonList>
+                    <IonItem className='method'
+                        lines="none">
+                        Credit / Debit card
+                    </IonItem>
+                </IonList>
+                <div className='div'>
+                    <Cards
+                        number={state.number}
+                        expiry={state.expiry}
+                        cvc={state.cvc}
+                        name={state.name}
+                        focused={state.focus}
+                    />
+                    <form>
+                        <input
+                            type="number"
+                            name="number"
+                            placeholder="Card Number"
+                            value={state.number}
+                            onChange={handleInputChange}
+                            onFocus={handleInputFocus}
+                        />
+                        ...
+                    </form>
+                </div>
             </IonContent>
         </IonPage>
-    )
+    );
 }
 
-export default Paymentmethod;
+export default PaymentMethod;
 

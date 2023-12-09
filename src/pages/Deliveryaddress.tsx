@@ -6,26 +6,78 @@ import {
     IonContent,
     IonList,
     IonItem,
-    IonToggle,
     IonButton,
-    IonBackButton,
     IonIcon,
+    IonInput,
+    IonText,
+    IonRow,
+    IonCol,
+    IonLabel
 } from '@ionic/react'
-import { } from 'ionicons/icons';
+import { useState, setState } from 'react';
+import { chevronBackOutline } from 'ionicons/icons';
 
 const Deliveryaddress: React.FC = () => {
+    const [name, setName] = useState('');
+    const [street, setStreet] = useState('');
+    const [city, setCity] = useState('');
+    const [zipCode, setZipCode] = useState('');
+
+    const handleSubmit = () => {
+        console.log('Name:', name);
+        console.log('Street:', street);
+        console.log('City:', city);
+        console.log('Zip Code:', zipCode);
+    };
+
     return (
         <IonPage>
             <IonHeader>
-                <IonToolbar color="tertiary">
+                <IonToolbar>
+                    <IonButton slot="start" color="light" routerLink='/checkout'>
+                        <IonIcon className="arrow" size="large" icon={chevronBackOutline} />
+                    </IonButton>
                     <IonTitle>Delivery address</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
+                <IonRow className='street'>
+                    <IonCol className='street' >
+                        <IonItem className='street' lines='none'>
+                            <IonLabel className='street' position="stacked">Name</IonLabel>
+                            <IonInput className='street' value={name} onIonChange={e => setName(e.detail.value!)} />
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+                <IonRow>
+                    <IonCol>
+                        <IonItem lines='none'>
+                            <IonLabel position="stacked">Street</IonLabel>
+                            <IonInput value={street} onIonChange={e => setStreet(e.detail.value!)} />
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+                <IonRow>
+                    <IonCol>
+                        <IonItem lines='none'>
+                            <IonLabel position="stacked">City</IonLabel>
+                            <IonInput value={city} onIonChange={e => setCity(e.detail.value!)} />
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+                <IonRow>
+                    <IonCol>
+                        <IonItem lines='none'>
+                            <IonLabel position="stacked">Zip Code</IonLabel>
+                            <IonInput value={zipCode} onIonChange={e => setZipCode(e.detail.value!)} />
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+                <IonButton className="addressbutton" color="success" expand="block" onClick={handleSubmit}>USE THIS ADDRESS</IonButton>
             </IonContent>
         </IonPage>
-    )
-}
+    );
+};
 
 export default Deliveryaddress;
 

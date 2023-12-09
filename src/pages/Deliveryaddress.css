@@ -1,0 +1,19 @@
+.deliveryaddress {
+    text-align: center;
+    font-size: 22px;
+}
+
+.street {
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+
+.name {
+    padding-bottom: 10px;
+}
+
+.addressbutton {
+    text-align: center;
+    width: 400px;
+}
