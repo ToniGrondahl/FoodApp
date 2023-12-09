@@ -40,6 +40,9 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
+import '@tomtom-international/web-sdk-maps/dist/maps.css'
+import tt from '@tomtom-international/web-sdk-maps';
+
 /* Theme variables */
 import './theme/variables.css';
 
