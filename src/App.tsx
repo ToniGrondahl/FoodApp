@@ -21,7 +21,7 @@ import Settings from './pages/Account/Settings';
 import Contact from './pages/Account/Contact';
 import About from './pages/Account/About';
 import Checkout from './pages/Checkout';
-//import Paymentmethod from './pages/Paymentmethod';
+import Paymentmethod from './pages/Paymentmethod';
 import Deliveryaddress from './pages/Deliveryaddress';
 import Jouninkeitto from './pages/Menu/Jouninkeitto';
 import Kingsushi from './pages/Menu/Kingsushi';
