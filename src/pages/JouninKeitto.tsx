@@ -1,34 +1,94 @@
 import React from 'react';
-import { star, starHalf, starOutline } from 'ionicons/icons';
-import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon } from '@ionic/react';
-
-
+import { star, starHalf, starOutline, cartOutline } from 'ionicons/icons';
+import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonList, IonLabel } from '@ionic/react';
+import ExploreContainer from '../components/ExploreContainer';
 import './Menu.css';
 
 const Home: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar color="tertiary">
-                    <IonTitle className='Menu'>Home</IonTitle>
-                </IonToolbar>
-            </IonHeader>
             <IonContent fullscreen>
 
+                <IonHeader>
+                    <img className='kuva' alt="keittoa" src='images/keittoa.jpeg' />
+                    <IonToolbar color="tertiary">
+                        <IonTitle className='Menu'>Jouni's soup corner</IonTitle>
+                    </IonToolbar>
+                </IonHeader>
+
                 <IonCard>
-                    <img src='images/keittoa.jpeg' alt='keittoa' />
-                    <IonCardHeader color="tertiary">
-                        <IonCardTitle>Jouni's soup corner</IonCardTitle>
-                    </IonCardHeader>
+                    <IonCardContent>
+
+                        <IonItem>
+                            <IonLabel>1. Salmon soup</IonLabel>
+                            <IonLabel> 13,99€</IonLabel>
+                            <IonButton>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
+
+                    </IonCardContent>
+                </IonCard>
+
+                <IonCard>
+                    <IonCardContent>
+
+                        <IonItem>
+                            <IonLabel>2. Chicken soup</IonLabel>
+                            <IonLabel> 9,99€</IonLabel>
+                            <IonButton>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
+
+                    </IonCardContent>
                 </IonCard>
 
 
+                <IonCard>
+                    <IonCardContent>
 
+                        <IonItem>
+                            <IonLabel>3. Tomato soup</IonLabel>
+                            <IonLabel> 7,99€</IonLabel>
+                            <IonButton>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
 
+                    </IonCardContent>
+                </IonCard>
 
-            </IonContent>
-        </IonPage>
+                <IonCard>
+                    <IonCardContent>
 
+                        <IonItem>
+                            <IonLabel>4. French onion soup</IonLabel>
+                            <IonLabel> 10,99€</IonLabel>
+                            <IonButton>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
+
+                    </IonCardContent>
+                </IonCard>
+
+                <IonCard>
+                    <IonCardContent>
+
+                        <IonItem>
+                            <IonLabel>5. Meat soup</IonLabel>
+                            <IonLabel> 11,99€</IonLabel>
+                            <IonButton>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
+
+                    </IonCardContent>
+                </IonCard>
+
+            </IonContent >
+        </IonPage >
     );
 };
 
