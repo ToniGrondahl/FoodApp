@@ -5,13 +5,13 @@ import { useState } from 'react';
 
 const Register: React.FC = () => {
 
-    const [username, setUsername] = useState('')
+    
     const [password, setPassword] = useState('')
     const [Cpassword, setCPassword] = useState('')
     const [email, setEmail] = useState('')
 
     function LogInUser() {
-        console.log(email, password, Cpassword, username);
+        console.log(email, password, Cpassword);
     }
 
     return (
@@ -23,9 +23,7 @@ const Register: React.FC = () => {
                     <IonCardTitle>Create account</IonCardTitle>
                 </IonCardHeader>
                     <IonCardContent>
-                        <IonItem>
-                            <IonInput label="Username" type="text" labelPlacement="stacked" placeholder="username" onIonChange={(e: any) => setUsername(e.target.value)}></IonInput>
-                        </IonItem>
+                        
                         <IonItem>
                             <IonInput label="Email" type="email" labelPlacement="stacked" placeholder="example@gmail.com" onIonChange={(e: any) => setEmail(e.target.value)}></IonInput>
                         </IonItem>

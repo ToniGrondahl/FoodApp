@@ -2,14 +2,15 @@ import { IonCard, IonContent, IonHeader, IonPage, IonTitle, IonToolbar,  } from 
 import {IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton  } from '@ionic/react';
 import './Login.css';
 import { useState } from 'react';
-
+import {loginUser} from './firebase'
 const Login: React.FC = () => {
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    function LogInUser() {
-        console.log(email, password);
+    async function login() {
+        const res = await loginUser(email, password)
+        console.log(res ? 'login succesful' : 'login failed')
     }
 
     return (
@@ -27,7 +28,7 @@ const Login: React.FC = () => {
                         <IonItem>
                             <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)} required></IonInput>
                         </IonItem>
-                        <IonButton id='button' expand="block" type='submit' onClick={() => logInWithEmailAndPassword(email, password)}>Log In</IonButton>
+                        <IonButton id='button' expand="block" type='submit' onClick={login}>Log In</IonButton>
                         <p>Don't have an Account</p>
                         <IonButton id='button' fill="outline" expand="block" routerLink='./register'>Sign Up</IonButton>
                     </IonCardContent>
