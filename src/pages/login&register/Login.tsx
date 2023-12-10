@@ -3,6 +3,7 @@ import {IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, 
 import './Login.css';
 import { useState } from 'react';
 import {loginUser} from './firebase'
+
 const Login: React.FC = () => {
     
     const [email, setEmail] = useState('')
@@ -10,7 +11,13 @@ const Login: React.FC = () => {
 
     async function login() {
         const res = await loginUser(email, password)
-        console.log(res ? 'login succesful' : 'login failed')
+        
+        if (res === true) {
+            console.log("login succesful")
+            
+        } else {
+            console.log("login failed")
+        }
     }
 
     return (
