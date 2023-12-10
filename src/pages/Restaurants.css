@@ -73,7 +73,47 @@ img {
     
 }
 
+.popCloseButton {
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%; 
+    background-color: black; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px; 
+    cursor: pointer;
+    position: fixed;
+    top: 2%;
+    left: 2%; }
 
+    .popHeader {
+        text-align: center;
+    }
+
+    /* styles.css or your component's CSS file */
+    .custom-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 70vw;
+        max-height: 20vh;
+        width: auto !important;
+        height: auto !important;
+        border-radius: 8%;
+      }
+  
+    .popToolbar{
+        --ion-toolbar-md-min-height: 80px; /* Set the desired minimum height for Android */
+         --ion-toolbar-ios-min-height: 80px;
+    }
+
+    .RestaurantInfo{
+        font-size: 13px;
+        padding: 2px;
+    }
 
 
 
