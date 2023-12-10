@@ -45,7 +45,7 @@ import './theme/variables.css';
 
 setupIonicReact();
 
-const App: React.FC = () => (
+const App = () => (
   <IonApp>
     <IonReactRouter>
       <IonTabs>
@@ -71,7 +71,7 @@ const App: React.FC = () => (
           <Route exact path="/deliveryaddress">
             <Deliveryaddress />
           </Route>
-          <Route path="/search">
+          <Route exact path="/search">
             <Search />
           </Route>
           <Route exact path="/account">
