@@ -1,7 +1,6 @@
 import React from 'react';
 import { star, starHalf, starOutline, cartOutline } from 'ionicons/icons';
 import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonList, IonLabel } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Menu.css';
 
 const Home: React.FC = () => {
