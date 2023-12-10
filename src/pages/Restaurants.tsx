@@ -29,9 +29,11 @@ return (
           <IonTitle className='restaurants'>Restaurants</IonTitle>
         </IonToolbar>
       </IonHeader>
+      
       <IonContent fullscreen>
         <IonGrid>
           <IonRow>
+            
             <IonCol>
               <IonCard className="cardsize">
               <img src='images/kalasipsi.jpeg' alt='fishChips' className='images' />
@@ -49,6 +51,7 @@ return (
             <IonButton expand="block" color="tertiary" size="default" className='buttonmenu'>Menu</IonButton>
               </IonCard>
             </IonCol>
+            
             <IonCol>
             <IonCard className="cardsize">
               <img src='images/keittoa.jpeg' alt='keittoa' className='images' />
@@ -68,6 +71,7 @@ return (
               </IonCard>
             </IonCol>
           </IonRow>
+          
           <IonRow>
             <IonCol>
             <IonCard className="cardsize">
@@ -87,6 +91,7 @@ return (
             <IonButton expand="block" color="tertiary" size="default" className='buttonmenu'>Menu</IonButton>
               </IonCard>
             </IonCol>
+            
             <IonCol>
             <IonCard className="cardsize">
               <img src='images/sushi.jpg' alt='sushi' className='images' />
@@ -107,6 +112,7 @@ return (
               </IonCard>
             </IonCol>
           </IonRow>
+          
           <IonRow>
             <IonCol>
             <IonCard className="cardsize">
@@ -128,6 +134,7 @@ return (
             <IonButton expand="block" color="tertiary" size="default" className='buttonmenu'>Menu</IonButton>
               </IonCard>
             </IonCol>
+            
             <IonCol>
             <IonCard className="cardsize">
               <img src='images/Tartarillas.jpeg' alt='Tartarilla' className='images' />
@@ -149,7 +156,7 @@ return (
           </IonRow>
           
         </IonGrid>
-         {/* Render the RestaurantInfoModal */}
+         {}
          <IonModal isOpen={showModal} className="custom-modal">
           <IonContent>
           <IonToolbar color="tertiary" className='popToolbar'>
