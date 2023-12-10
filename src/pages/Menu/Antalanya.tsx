@@ -3,7 +3,7 @@ import { star, starHalf, starOutline, cartOutline } from 'ionicons/icons';
 import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonList, IonLabel } from '@ionic/react';
 import './Menu.css';
 
-const Home: React.FC = () => {
+const Antalanya: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
@@ -91,4 +91,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default Antalanya;
