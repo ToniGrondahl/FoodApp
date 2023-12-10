@@ -1,9 +1,10 @@
-import { IonCard, IonContent, IonHeader, IonPage, IonTitle, IonToolbar,  } from '@ionic/react';
+import { IonCard, IonContent, IonHeader, IonPage, IonRedirect, IonRouterLink, IonTitle, IonToolbar,  } from '@ionic/react';
 import {IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton  } from '@ionic/react';
 import './Login.css';
+
 import { useState } from 'react';
 import {loginUser} from './firebase'
-
+import { Link } from 'react-router-dom';
 const Login: React.FC = () => {
     
     const [email, setEmail] = useState('')
@@ -23,7 +24,7 @@ const Login: React.FC = () => {
     return (
     <IonPage>
         <IonContent >
-            <div className="flex-center">
+            <div className="flex-center" id='redirect'>
                 <IonCard>
                 <IonCardHeader>
                     <IonCardTitle>Food App</IonCardTitle>

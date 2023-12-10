@@ -39,7 +39,7 @@ export async function loginUser(username: string, password:string){
     return false
   }
 }
-export async function createUser(username: string, password:string){
+export async function registerUserValidation(username: string, password:string){
 
   try {
     const res = await createUserWithEmailAndPassword(auth, username, password)

@@ -1,4 +1,4 @@
-import {
+/*import {
     IonPage,
     IonHeader,
     IonToolbar,
@@ -13,7 +13,7 @@ import { chevronBackOutline } from 'ionicons/icons';
 import './Paymentmethod.css'
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import React, { useState, } from 'react';
-import Cards from 'react-credit-cards-2';
+import Cards from "FoodApp/package.json/react-credit-cards-2";
 
 
 const PaymentMethod = () => {
@@ -53,14 +53,14 @@ const PaymentMethod = () => {
                         Credit / Debit card
                     </IonItem>
                 </IonList>
-                <div className='div'>
+                <div className='div'> 
                     <Cards
                         number={state.number}
                         expiry={state.expiry}
                         cvc={state.cvc}
                         name={state.name}
                         focused={state.focus}
-                    />
+                    /> 
                     <form>
                         <input
                             type="number"
@@ -78,5 +78,5 @@ const PaymentMethod = () => {
     );
 }
 
-export default PaymentMethod;
+export default PaymentMethod;*/
 

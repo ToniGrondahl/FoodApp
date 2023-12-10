@@ -21,7 +21,7 @@ import Settings from './pages/Account/Settings';
 import Contact from './pages/Account/Contact';
 import About from './pages/Account/About';
 import Checkout from './pages/Checkout';
-import Paymentmethod from './pages/Paymentmethod';
+//import Paymentmethod from './pages/Paymentmethod';
 import Deliveryaddress from './pages/Deliveryaddress';
 
 /* Core CSS required for Ionic components to work properly */
@@ -65,9 +65,8 @@ const App: React.FC = () => (
           <Route exact path="/checkout">
             <Checkout />
           </Route>
-          <Route exact path="/paymentmethod">
-            <Paymentmethod />
-          </Route>
+          
+          
           <Route exact path="/deliveryaddress">
             <Deliveryaddress />
           </Route>

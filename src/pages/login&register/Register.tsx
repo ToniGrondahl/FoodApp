@@ -2,6 +2,8 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import {IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton  } from '@ionic/react';
 import './Register.css';
 import { useState } from 'react';
+import { registerUserValidation } from './firebase'
+import { Link } from 'react-router-dom';
 
 const Register: React.FC = () => {
 
@@ -10,9 +12,20 @@ const Register: React.FC = () => {
     const [Cpassword, setCPassword] = useState('')
     const [email, setEmail] = useState('')
 
-    function LogInUser() {
-        console.log(email, password, Cpassword);
+    async function registerUser() {
+        if (password !== Cpassword){
+            //return  toast('Password do not match!')
+    } if (email.trim() === '' || password.trim() === '') {
+        //return toast('Email and password are required')
     }
+
+    const res = await registerUserValidation(email, password)
+    if (res === true) {
+        console.log("account created")
+    } else {
+        console.log("creating account failed")
+    }
+}
 
     return (
       <IonPage>
@@ -31,10 +44,10 @@ const Register: React.FC = () => {
                             <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)}></IonInput>
                         </IonItem>
                         <IonItem>
-                            <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
+                            <IonInput label="Password again" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
                         </IonItem>
-                        <IonButton id='button' expand="block" type='submit' onClick={LogInUser}>Sign Up</IonButton>
-                        
+                        <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
+                        <p>Already have an account?  <Link to="./login"> Login</Link></p>
                     </IonCardContent>
                     </IonCard>
             </div>
@@ -44,4 +57,3 @@ const Register: React.FC = () => {
   };
   
   export default Register;
-  
