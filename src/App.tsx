@@ -23,6 +23,10 @@ import About from './pages/Account/About';
 import Checkout from './pages/Checkout';
 //import Paymentmethod from './pages/Paymentmethod';
 import Deliveryaddress from './pages/Deliveryaddress';
+import Jouninkeitto from './pages/Menu/Jouninkeitto';
+import Kingsushi from './pages/Menu/Kingsushi';
+import FishAndChips from './pages/Menu/Fish&chips';
+import Antalanya from './pages/Menu/Antalanya';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -65,8 +69,8 @@ const App: React.FC = () => (
           <Route exact path="/checkout">
             <Checkout />
           </Route>
-          
-          
+
+
           <Route exact path="/deliveryaddress">
             <Deliveryaddress />
           </Route>
