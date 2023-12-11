@@ -14,6 +14,12 @@ import './Paymentmethod.css'
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import React, { useState, } from 'react';
 import Cards from "react-credit-cards-2";
+import {
+    cardTypesMap,
+    getCardType,
+    setInitialValidCardTypes,
+    validateLuhn,
+} from "../utils/CardHelpers"
 
 
 const PaymentMethod = () => {
@@ -70,7 +76,30 @@ const PaymentMethod = () => {
                             onChange={handleInputChange}
                             onFocus={handleInputFocus}
                         />
-                        ...
+                        <input
+                            type="name"
+                            name="name"
+                            placeholder="Card Name"
+                            value={state.name}
+                            onChange={handleInputChange}
+                            onFocus={handleInputFocus}
+                        />
+                        <input
+                            type="expiry"
+                            name="expiry"
+                            placeholder="Card Expiry"
+                            value={state.expiry}
+                            onChange={handleInputChange}
+                            onFocus={handleInputFocus}
+                        />
+                        <input
+                            type="cvc"
+                            name="cvc"
+                            placeholder="Card Cvc"
+                            value={state.cvc}
+                            onChange={handleInputChange}
+                            onFocus={handleInputFocus}
+                        />
                     </form>
                 </div>
             </IonContent>
