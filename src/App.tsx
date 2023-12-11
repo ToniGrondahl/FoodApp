@@ -27,6 +27,8 @@ import Jouninkeitto from './pages/Menu/Jouninkeitto';
 import Kingsushi from './pages/Menu/Kingsushi';
 import FishAndChips from './pages/Menu/Fish&chips';
 import Antalanya from './pages/Menu/Antalanya';
+import Cafeursus from './pages/Menu/Cafeursus';
+import Tartarillas from './pages/Menu/Tartarillas';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -75,11 +77,17 @@ const App: React.FC = () => (
           <Route exact path="/kingsushi">
             <Kingsushi />
           </Route>
-          <Route exact path="/fishandchips">
+          <Route exact path="/fish&chips">
             <FishAndChips />
           </Route>
           <Route exact path="/antalanyapizzeria">
             <Antalanya />
+          </Route>
+          <Route exact path="/cafeursus">
+            <Cafeursus />
+          </Route>
+          <Route exact path="tartarillas">
+            <Tartarillas />
           </Route>
           <Route exact path="/Paymentmethod">
             <Paymentmethod />

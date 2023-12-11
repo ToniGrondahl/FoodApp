@@ -21,7 +21,7 @@ const FishAndChips: React.FC = () => {
                         <IonItem>
                             <IonLabel>1. Classic fish and chips</IonLabel>
                             <IonLabel> 12,99€</IonLabel>
-                            <IonButton>
+                            <IonButton color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -35,7 +35,7 @@ const FishAndChips: React.FC = () => {
                         <IonItem>
                             <IonLabel>2. Grilled Lemon Herb Salmon</IonLabel>
                             <IonLabel> 15,99€</IonLabel>
-                            <IonButton>
+                            <IonButton color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -50,7 +50,7 @@ const FishAndChips: React.FC = () => {
                         <IonItem>
                             <IonLabel>3. Seafood Platter</IonLabel>
                             <IonLabel> 17,99€</IonLabel>
-                            <IonButton>
+                            <IonButton color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -64,7 +64,7 @@ const FishAndChips: React.FC = () => {
                         <IonItem>
                             <IonLabel>4. Fish Tacos</IonLabel>
                             <IonLabel> 13,99€</IonLabel>
-                            <IonButton>
+                            <IonButton color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -78,7 +78,7 @@ const FishAndChips: React.FC = () => {
                         <IonItem>
                             <IonLabel>5. Vegetarian Fish and Chips</IonLabel>
                             <IonLabel> 13,99€</IonLabel>
-                            <IonButton>
+                            <IonButton color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
