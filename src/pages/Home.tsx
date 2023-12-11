@@ -1,7 +1,6 @@
 import React from 'react';
 import { star, starHalf, starOutline } from 'ionicons/icons';
 import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonCol, IonRow, IonList, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -34,8 +33,8 @@ const Home: React.FC = () => {
                 <IonIcon className='stara' icon={star} > </IonIcon>
                 <IonIcon className='stara' icon={star} > </IonIcon>
                 <IonIcon className='stara' icon={star} > </IonIcon>
-                <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
-                <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
+                <IonIcon className='tyhjaStara' icon={starOutline} > </IonIcon>
+                <IonIcon className='tyhjaStara' icon={starOutline} > </IonIcon>
               </IonItem>
             </IonList>
           </IonRow>
@@ -51,8 +50,8 @@ const Home: React.FC = () => {
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
-            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
+            <IonIcon className='tyhjaStara' icon={starOutline} > </IonIcon>
+            <IonIcon className='tyhjaStara' icon={starOutline} > </IonIcon>
           </IonItem>
         </IonCard>
 
@@ -64,19 +63,18 @@ const Home: React.FC = () => {
             <div className="right-column">
               <IonCardHeader>
                 <IonCardTitle>Authentic Fish&Chips</IonCardTitle>
-                <IonCardSubtitle color="tertiary">Feels like you are in UK</IonCardSubtitle>
               </IonCardHeader>
+              <IonCardSubtitle className='alaotsikko' color="tertiary">Feels like you are in UK</IonCardSubtitle>
               <IonItem lines='none' className='starat'>
                 <IonIcon className='stara' icon={star} />
                 <IonIcon className='stara' icon={star} />
                 <IonIcon className='stara' icon={star} />
-                <IonIcon className='tyhjaStara' icon={star} />
-                <IonIcon className='tyhjaStara' icon={star} />
+                <IonIcon className='tyhjaStara' icon={starOutline} />
+                <IonIcon className='tyhjaStara' icon={starOutline} />
               </IonItem>
             </div>
           </div>
         </IonCard>
-
 
         <IonCard>
           <IonCardHeader>
@@ -84,12 +82,12 @@ const Home: React.FC = () => {
             <IonCardTitle>Jouni's soup corner</IonCardTitle>
             <IonCardSubtitle color="tertiary">Mouth watering soups since 1998</IonCardSubtitle>
           </IonCardHeader>
-          <IonItem>
+          <IonItem className='rating' lines='none'>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='puoliStara' icon={starHalf} ></IonIcon>
-            <IonIcon className='tyhjaStara' icon={star}></IonIcon>
+            <IonIcon className='tyhjaStara' icon={starOutline}></IonIcon>
           </IonItem>
         </IonCard>
 
@@ -99,7 +97,7 @@ const Home: React.FC = () => {
             <IonCardTitle>Antalanya pizzeria</IonCardTitle>
             <IonCardSubtitle color="tertiary">Best pizza in Finland</IonCardSubtitle>
           </IonCardHeader>
-          <IonItem>
+          <IonItem lines='none'>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
@@ -114,12 +112,12 @@ const Home: React.FC = () => {
             <IonCardTitle>King sushi</IonCardTitle>
             <IonCardSubtitle color="tertiary">Fresh everyday</IonCardSubtitle>
           </IonCardHeader>
-          <IonItem>
+          <IonItem lines='none'>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
+            <IonIcon className='tyhjaStara' icon={starOutline} > </IonIcon>
           </IonItem>
         </IonCard>
 

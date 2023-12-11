@@ -4,8 +4,9 @@ img {
 }
 
 .cardimage {
-    border-radius: 20%;
-    display: block;
+    border-radius: 3%;
+    height: 170px;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -28,13 +29,11 @@ img {
     padding-top: 30px;
 }
 
-
 .flex-container {
     display: flex;
     align-items: center;
     width: 100%;
 }
-
 
 .left-column {
     flex: 1;
@@ -97,4 +96,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+}
+
+.alaotsikko {
+    padding-left: 20px;
 }
