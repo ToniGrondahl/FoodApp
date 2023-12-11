@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, } from 'react';
-import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal, IonRouterOutlet, IonLabel, } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal, IonRouterOutlet, IonLabel, useIonToast, } from '@ionic/react';
 import { callOutline, helpCircleOutline, logOutOutline, settingsOutline, } from 'ionicons/icons';
 import { useHistory, } from 'react-router-dom';
 import {signOutUser} from './login&register/firebase'
@@ -22,7 +22,17 @@ function Account() {
     function dismiss() {
         modal.current?.dismiss();
     }
+    //------------------
+    const [present2] = useIonToast();
 
+    const presentToast = (message: string) => {
+    present2({
+      message: message,
+      duration: 5000,
+      position:'bottom',
+    });
+  };
+    //------------------
     function canDismiss() {
         return new Promise<boolean>((resolve, reject) => {
             present({
@@ -48,7 +58,7 @@ function Account() {
             );
         }).then(() => {
             // Redirect to the desired page after clicking "Yes"
-            signOutUser()
+            signOutUser() 
             history.push('/login');
         });
     }

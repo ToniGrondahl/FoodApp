@@ -3,14 +3,14 @@ import {IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, I
 import './Register.css';
 import { useState } from 'react';
 import { registerUserValidation } from './firebase'
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 const Register: React.FC = () => {
 
     const [password, setPassword] = useState('')
     const [Cpassword, setCPassword] = useState('')
     const [email, setEmail] = useState('')
-
+    const [showError, setShowError] = useState(false);
     const [present] = useIonToast();
 
     const presentToast = (message: string) => {
@@ -24,19 +24,19 @@ const Register: React.FC = () => {
     async function registerUser() {
         if (password !== Cpassword){
             presentToast('Passwords do not match')
-            console.log("Passwords do not match")
+            
     } if (email.trim() === '' || password.trim() === '') {
             presentToast('Email and password are required')
-            console.log("Passwords do not match")
+           
     }
 
     const res = await registerUserValidation(email, password)
     if (res === true) {
         presentToast('account created')
-        console.log("account created")
+        setShowError(true);
     } else {
         presentToast('creating account failed')
-        console.log("creating account failed")
+       
     }
 }
 
@@ -60,6 +60,7 @@ const Register: React.FC = () => {
                             <IonInput label="Password again" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
                         </IonItem>
                         <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
+                        {showError ? <Redirect to="/home" /> : null}
                         <p>Already have an account?  <Link to="./login"> Login</Link></p>
                     </IonCardContent>
                     </IonCard>
