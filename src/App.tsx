@@ -81,7 +81,9 @@ const App: React.FC = () => (
           <Route exact path="/antalanyapizzeria">
             <Antalanya />
           </Route>
-
+          <Route exact path="/Paymentmethod">
+            <Paymentmethod />
+          </Route>
           <Route exact path="/deliveryaddress">
             <Deliveryaddress />
           </Route>
