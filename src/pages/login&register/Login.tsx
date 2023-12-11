@@ -4,7 +4,7 @@ import './Login.css';
 
 import { useState } from 'react';
 import {loginUser} from './firebase'
-import { Link } from 'react-router-dom';
+import { toast } from './Toast';
 const Login: React.FC = () => {
     
     const [email, setEmail] = useState('')
@@ -14,10 +14,10 @@ const Login: React.FC = () => {
         const res = await loginUser(email, password)
         
         if (res === true) {
-            console.log("login succesful")
+            toast("login succesful")
             
         } else {
-            console.log("login failed")
+            toast("login failed")
         }
     }
 

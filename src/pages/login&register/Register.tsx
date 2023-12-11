@@ -4,7 +4,7 @@ import './Register.css';
 import { useState } from 'react';
 import { registerUserValidation } from './firebase'
 import { Link } from 'react-router-dom';
-
+import { toast } from './Toast';
 const Register: React.FC = () => {
 
     
@@ -14,15 +14,19 @@ const Register: React.FC = () => {
 
     async function registerUser() {
         if (password !== Cpassword){
-            //return  toast('Password do not match!')
+            toast('Passwords do not match')
+            console.log("Passwords do not match")
     } if (email.trim() === '' || password.trim() === '') {
-        //return toast('Email and password are required')
+            toast('Email and password are required')
+            console.log("Passwords do not match")
     }
 
     const res = await registerUserValidation(email, password)
     if (res === true) {
+        toast('account created')
         console.log("account created")
     } else {
+        toast('creating account failed')
         console.log("creating account failed")
     }
 }

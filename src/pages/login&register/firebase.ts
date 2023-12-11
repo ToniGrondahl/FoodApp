@@ -9,6 +9,7 @@ import {
   sendPasswordResetEmail,
   signOut
 } from "firebase/auth"
+//import { Navigate } from 'react-router-dom';
 
 const app = firebase.initializeApp({
   apiKey: 'AIzaSyDVFYEVQx_6vEHaafhy3BGPlFqnjcVeehM',
@@ -51,5 +52,7 @@ export async function registerUserValidation(username: string, password:string){
   }
 }
 
-
+/*export async function signOutUser() {
+    const navigate = Navigate()
+}*/
 
