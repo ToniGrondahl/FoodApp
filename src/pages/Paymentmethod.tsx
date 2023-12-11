@@ -94,6 +94,7 @@ const PaymentMethod = () => {
                             onFocus={handleInputFocus}
                         />
                     </form>
+                    <IonButton className='cardbutton' expand="block" color='success'>USE THIS CARD</IonButton>
                 </div>
             </IonContent>
         </IonPage>
