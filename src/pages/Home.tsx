@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           </IonRow>
         </IonCol>
 
-        <IonCard>
+        <IonCard routerLink='/fish&chips'>
           <IonCardHeader>
             <img className='cardimage' src='images/kalasipsi.jpeg' alt='fishChips' />
           </IonCardHeader>

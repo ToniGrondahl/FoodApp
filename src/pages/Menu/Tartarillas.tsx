@@ -1,6 +1,6 @@
 import React from 'react';
-import { star, starHalf, starOutline, cartOutline } from 'ionicons/icons';
-import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonList, IonLabel } from '@ionic/react';
+import { cartOutline } from 'ionicons/icons';
+import { IonContent, IonHeader, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonItem, IonCard, IonIcon, IonLabel } from '@ionic/react';
 import './Menu.css';
 
 const Tartarillas: React.FC = () => {
@@ -21,7 +21,7 @@ const Tartarillas: React.FC = () => {
                         <IonItem>
                             <IonLabel>1. Nigiri sushi</IonLabel>
                             <IonLabel> 2,50€ per piece</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -35,7 +35,7 @@ const Tartarillas: React.FC = () => {
                         <IonItem>
                             <IonLabel>2. Sashimi platter</IonLabel>
                             <IonLabel> 18,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -50,7 +50,7 @@ const Tartarillas: React.FC = () => {
                         <IonItem>
                             <IonLabel>3. Dragon roll</IonLabel>
                             <IonLabel> 14,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -64,7 +64,7 @@ const Tartarillas: React.FC = () => {
                         <IonItem>
                             <IonLabel>4. Vegetarian Maki</IonLabel>
                             <IonLabel> 10,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -78,7 +78,7 @@ const Tartarillas: React.FC = () => {
                         <IonItem>
                             <IonLabel>5. Chef's Special Roll</IonLabel>
                             <IonLabel> 16,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>

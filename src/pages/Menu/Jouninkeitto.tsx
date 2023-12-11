@@ -1,6 +1,6 @@
 import React from 'react';
-import { star, starHalf, starOutline, cartOutline } from 'ionicons/icons';
-import { IonContent, IonHeader, IonThumbnail, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonTextarea, IonText, IonItem, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonIcon, IonList, IonLabel } from '@ionic/react';
+import { cartOutline } from 'ionicons/icons';
+import { IonContent, IonHeader, IonCardContent, IonPage, IonButton, IonTitle, IonToolbar, IonItem, IonCard, IonIcon, IonLabel } from '@ionic/react';
 import './Menu.css';
 
 const Jouninkeitto: React.FC = () => {
@@ -21,7 +21,7 @@ const Jouninkeitto: React.FC = () => {
                         <IonItem>
                             <IonLabel>1. Salmon soup</IonLabel>
                             <IonLabel> 13,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -35,7 +35,7 @@ const Jouninkeitto: React.FC = () => {
                         <IonItem>
                             <IonLabel>2. Chicken soup</IonLabel>
                             <IonLabel> 9,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -50,7 +50,7 @@ const Jouninkeitto: React.FC = () => {
                         <IonItem>
                             <IonLabel>3. Tomato soup</IonLabel>
                             <IonLabel> 7,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -64,7 +64,7 @@ const Jouninkeitto: React.FC = () => {
                         <IonItem>
                             <IonLabel>4. French onion soup</IonLabel>
                             <IonLabel> 10,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>
@@ -78,7 +78,7 @@ const Jouninkeitto: React.FC = () => {
                         <IonItem>
                             <IonLabel>5. Meat soup</IonLabel>
                             <IonLabel> 11,99€</IonLabel>
-                            <IonButton color='success'>
+                            <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
                         </IonItem>

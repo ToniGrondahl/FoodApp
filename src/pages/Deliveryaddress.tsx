@@ -4,17 +4,15 @@ import {
     IonToolbar,
     IonTitle,
     IonContent,
-    IonList,
     IonItem,
     IonButton,
     IonIcon,
     IonInput,
-    IonText,
     IonRow,
     IonCol,
     IonLabel
 } from '@ionic/react'
-import { useState, setState } from 'react';
+import { useState, } from 'react';
 import { chevronBackOutline } from 'ionicons/icons';
 
 const Deliveryaddress: React.FC = () => {
@@ -41,11 +39,11 @@ const Deliveryaddress: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonRow className='street'>
-                    <IonCol className='street' >
-                        <IonItem className='street' lines='none'>
-                            <IonLabel className='street' position="stacked">Name</IonLabel>
-                            <IonInput className='street' value={name} onIonChange={e => setName(e.detail.value!)} />
+                <IonRow>
+                    <IonCol >
+                        <IonItem lines='none'>
+                            <IonLabel position="stacked">Name</IonLabel>
+                            <IonInput value={name} onIonChange={e => setName(e.detail.value!)} />
                         </IonItem>
                     </IonCol>
                 </IonRow>
