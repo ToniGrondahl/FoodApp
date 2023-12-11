@@ -3,6 +3,13 @@ img {
     width: 100px;
 }
 
+.cardimage {
+    border-radius: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .stara {
     color: yellow;
 }
@@ -21,32 +28,73 @@ img {
     padding-top: 30px;
 }
 
-   
-  .flex-container {
+
+.flex-container {
     display: flex;
     align-items: center;
     width: 100%;
-  }
-  
- 
-  .left-column {
-    flex: 1; 
-    margin-right: 10px;
-  }
-  
-  
-  .right-column {
-    flex: 3; 
-    
-  }
-  
-  
-  .left-column img {
-    margin-left: 10px;
-    border-radius: 8%; 
-  }
+}
 
-  .starat {
+
+.left-column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+.right-column {
+    flex: 3;
+
+}
+
+.left-column img {
+    margin-left: 10px;
+    border-radius: 8%;
+}
+
+.starat {
     font-size: small;
-    
-  }
+
+}
+
+.title {
+    font-size: 25px;
+    padding-right: 64px;
+
+}
+
+.listitem {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.subtitle {
+    padding-left: 10px;
+}
+
+.icons {
+    font-size: small;
+}
+
+.imageitem {
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+}
+
+.rivi {
+    height: 10%;
+}
+
+.cardtitle {
+    text-align: center;
+}
+
+.cardsubtitle {
+    text-align: center;
+}
+
+.cardrating {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
