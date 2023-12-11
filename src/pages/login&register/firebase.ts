@@ -52,7 +52,13 @@ export async function registerUserValidation(username: string, password:string){
   }
 }
 
-/*export async function signOutUser() {
-    const navigate = Navigate()
-}*/
+export async function signOutUser() {
+      try{
+        signOut(auth)
+        console.log("logout succeeded")
+      } catch (error) {
+        console.log(error)
+        console.log("failed")
+      }
+}
 

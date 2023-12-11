@@ -2,7 +2,9 @@ import { useState, useRef, useEffect, } from 'react';
 import { IonButton, IonContent, IonHeader, IonItem, IonList, IonPage, IonTitle, IonToolbar, useIonActionSheet, IonIcon, IonModal, IonRouterOutlet, IonLabel, } from '@ionic/react';
 import { callOutline, helpCircleOutline, logOutOutline, settingsOutline, } from 'ionicons/icons';
 import { useHistory, } from 'react-router-dom';
+import {signOutUser} from './login&register/firebase'
 import './Account.css';
+
 
 
 function Account() {
@@ -46,6 +48,7 @@ function Account() {
             );
         }).then(() => {
             // Redirect to the desired page after clicking "Yes"
+            signOutUser()
             history.push('/login');
         });
     }

@@ -15,6 +15,7 @@ const Login: React.FC = () => {
         
         if (res === true) {
             toast("login succesful")
+            console.log("login succesful")
             
         } else {
             toast("login failed")
