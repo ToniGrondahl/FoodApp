@@ -14,13 +14,6 @@ import './Paymentmethod.css'
 import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import React, { useState, } from 'react';
 import Cards from "react-credit-cards-2";
-import {
-    cardTypesMap,
-    getCardType,
-    setInitialValidCardTypes,
-    validateLuhn,
-} from "../utils/CardHelpers"
-
 
 const PaymentMethod = () => {
     const [state, setState] = useState({
