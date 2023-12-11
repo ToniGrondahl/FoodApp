@@ -1,32 +1,41 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import {IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton  } from '@ionic/react';
+import {IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton, useIonToast  } from '@ionic/react';
 import './Register.css';
 import { useState } from 'react';
 import { registerUserValidation } from './firebase'
 import { Link } from 'react-router-dom';
-import { toast } from './Toast';
+
 const Register: React.FC = () => {
 
-    
     const [password, setPassword] = useState('')
     const [Cpassword, setCPassword] = useState('')
     const [email, setEmail] = useState('')
 
+    const [present] = useIonToast();
+
+    const presentToast = (message: string) => {
+    present({
+      message: message,
+      duration: 5000,
+      position:'bottom',
+    });
+  };
+
     async function registerUser() {
         if (password !== Cpassword){
-            toast('Passwords do not match')
+            presentToast('Passwords do not match')
             console.log("Passwords do not match")
     } if (email.trim() === '' || password.trim() === '') {
-            toast('Email and password are required')
+            presentToast('Email and password are required')
             console.log("Passwords do not match")
     }
 
     const res = await registerUserValidation(email, password)
     if (res === true) {
-        toast('account created')
+        presentToast('account created')
         console.log("account created")
     } else {
-        toast('creating account failed')
+        presentToast('creating account failed')
         console.log("creating account failed")
     }
 }
