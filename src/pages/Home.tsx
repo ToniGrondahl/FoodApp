@@ -18,20 +18,27 @@ const Home: React.FC = () => {
           <IonTitle>Recommended Restaurants</IonTitle>
         </IonToolbar>
 
-        <IonCard>
-          <IonCardHeader>
-            <img src='images/kalasipsi.jpeg' alt='fishChips' />
-            <IonCardTitle>Authentic Fish&Chips</IonCardTitle>
-            <IonCardSubtitle color="tertiary">Feels like you are in UK</IonCardSubtitle>
-          </IonCardHeader>
-          <IonItem>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='stara' icon={star} > </IonIcon>
-            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
-            <IonIcon className='tyhjaStara' icon={star} > </IonIcon>
-          </IonItem>
-        </IonCard>
+        <IonCard className="custom-card">
+  <div className="flex-container">
+    <div className="left-column">
+      <img src='images/kalasipsi.jpeg' alt='fishChips' />
+    </div>
+    <div className="right-column">
+      <IonCardHeader>
+        <IonCardTitle>Authentic Fish&Chips</IonCardTitle>
+        <IonCardSubtitle color="tertiary">Feels like you are in UK</IonCardSubtitle>
+      </IonCardHeader>
+      <IonItem lines='none' className='starat'>
+        <IonIcon className='stara' icon={star} />
+        <IonIcon className='stara' icon={star} />
+        <IonIcon className='stara' icon={star} />
+        <IonIcon className='tyhjaStara' icon={star} />
+        <IonIcon className='tyhjaStara' icon={star} />
+      </IonItem>
+    </div>
+  </div>
+</IonCard>
+
 
         <IonCard>
           <IonCardHeader>
