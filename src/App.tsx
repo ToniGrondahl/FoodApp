@@ -80,13 +80,13 @@ const App: React.FC = () => (
           <Route exact path="/fish&chips">
             <FishAndChips />
           </Route>
-          <Route exact path="/antalanya">
+          <Route exact path="/antalanyapizzeria">
             <Antalanya />
           </Route>
           <Route exact path="/cafeursus">
             <Cafeursus />
           </Route>
-          <Route exact path="/tartarillas">
+          <Route exact path="tartarillas">
             <Tartarillas />
           </Route>
           <Route exact path="/Paymentmethod">
