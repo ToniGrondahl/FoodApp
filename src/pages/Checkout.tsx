@@ -15,7 +15,7 @@ const Checkout: React.FC = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar color="light">
-                    <IonButton slot="start" color="light">
+                    <IonButton routerLink="/restaurants" slot="start" color="light">
                         <IonIcon className="arrow" size="large" icon={chevronBackOutline} />
                     </IonButton>
                     <IonTitle className="checkout">Checkout</IonTitle>
