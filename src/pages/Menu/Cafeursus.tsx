@@ -19,8 +19,8 @@ const Cafeursus: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>1. Nigiri sushi</IonLabel>
-                            <IonLabel> 2,50€ per piece</IonLabel>
+                            <IonLabel>1. Croisant</IonLabel>
+                            <IonLabel> 2,50€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
@@ -33,8 +33,8 @@ const Cafeursus: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>2. Sashimi platter</IonLabel>
-                            <IonLabel> 18,99€</IonLabel>
+                            <IonLabel>2. Cinnamon bun</IonLabel>
+                            <IonLabel> 2,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
@@ -48,8 +48,8 @@ const Cafeursus: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>3. Dragon roll</IonLabel>
-                            <IonLabel> 14,99€</IonLabel>
+                            <IonLabel>3. Berry Smoothie</IonLabel>
+                            <IonLabel> 4,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
@@ -62,8 +62,8 @@ const Cafeursus: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>4. Vegetarian Maki</IonLabel>
-                            <IonLabel> 10,99€</IonLabel>
+                            <IonLabel>4. Latte</IonLabel>
+                            <IonLabel> 3,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
@@ -76,8 +76,8 @@ const Cafeursus: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>5. Chef's Special Roll</IonLabel>
-                            <IonLabel> 16,99€</IonLabel>
+                            <IonLabel>5. American Coffee</IonLabel>
+                            <IonLabel> 2,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
