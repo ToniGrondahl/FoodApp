@@ -13,14 +13,14 @@ const Register: React.FC = () => {
     const [present] = useIonToast();
     //Toast notification
     const presentToast = (message: string) => {
-    present({
-      message: message,
-      duration: 5000,
-      position:'bottom',
-    });
-  };
-  //--
-  //Validating registration
+        present({
+            message: message,
+            duration: 5000,
+            position: 'bottom',
+        });
+    };
+    //--
+    //Validating registration
     async function registerUser() {
         if (password !== Cpassword) {
             presentToast('Passwords do not match')
@@ -30,39 +30,39 @@ const Register: React.FC = () => {
 
         }
 
-    const res = await registerUserValidation(email, password)
-    if (res === true) {
-        presentToast('account created')
-        
-    } else {
-        presentToast('creating account failed')
-       
+        const res = await registerUserValidation(email, password)
+        if (res === true) {
+            presentToast('account created')
+
+        } else {
+            presentToast('creating account failed')
+
+        }
     }
-}
 
     return (
-      <IonPage>
-        <IonContent >
-            <div className="flex-center">
-                <IonCard>
-                <IonCardHeader>
-                    <IonCardTitle>Create account</IonCardTitle>
-                </IonCardHeader>
-                    <IonCardContent>
-                        
-                        <IonItem>
-                            <IonInput label="Email" type="email" labelPlacement="stacked" placeholder="example@gmail.com" onIonChange={(e: any) => setEmail(e.target.value)}></IonInput>
-                        </IonItem>
-                        <IonItem>
-                            <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)}></IonInput>
-                        </IonItem>
-                        <IonItem>
-                            <IonInput label="Password again" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
-                        </IonItem>
-                        <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
-                        
-                        <p>Already have an account?  <Link to="./login"> Login</Link></p>
-                    </IonCardContent>
+        <IonPage>
+            <IonContent color={'tertiary'} >
+                <div className="flex-center">
+                    <IonCard>
+                        <IonCardHeader>
+                            <IonCardTitle>Create account</IonCardTitle>
+                        </IonCardHeader>
+                        <IonCardContent>
+
+                            <IonItem>
+                                <IonInput label="Email" type="email" labelPlacement="stacked" placeholder="example@gmail.com" onIonChange={(e: any) => setEmail(e.target.value)}></IonInput>
+                            </IonItem>
+                            <IonItem>
+                                <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)}></IonInput>
+                            </IonItem>
+                            <IonItem>
+                                <IonInput label="Password again" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
+                            </IonItem>
+                            <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
+
+                            <p>Already have an account?  <Link to="./login"> Login</Link></p>
+                        </IonCardContent>
                     </IonCard>
                 </div>
             </IonContent>

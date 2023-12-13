@@ -22,16 +22,16 @@ const Login: React.FC = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    
-    
+
+
     async function login() {
         const res = await loginUser(email, password)
 
 
         if (res === true) {
             presentToast("login succesful!")
-           
-            
+
+
         } else {
             presentToast('Login failed! Please try again!')
         }
@@ -41,25 +41,25 @@ const Login: React.FC = () => {
 
 
     return (
-    <IonPage>
-        <IonContent >
-            <div className="flex-center" id='redirect'>
-                <IonCard>
-                <IonCardHeader>
-                    <IonCardTitle>Food App</IonCardTitle>
-                </IonCardHeader>
-                    <IonCardContent>
-                        <IonItem>
-                            <IonInput label="Email" type="email" labelPlacement="stacked" placeholder="example@gmail.com" onIonChange={(e: any) => setEmail(e.target.value)} required></IonInput>
-                        </IonItem>
-                        <IonItem>
-                            <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)} required></IonInput>
-                        </IonItem>
-                        <IonButton id='button' expand="block" type='submit' onClick={login}>Log In</IonButton>
+        <IonPage>
+            <IonContent color={'tertiary'} >
+                <div className="flex-center" id='redirect'>
+                    <IonCard>
+                        <IonCardHeader>
+                            <IonCardTitle>Food App</IonCardTitle>
+                        </IonCardHeader>
+                        <IonCardContent>
+                            <IonItem>
+                                <IonInput label="Email" type="email" labelPlacement="stacked" placeholder="example@gmail.com" onIonChange={(e: any) => setEmail(e.target.value)} required></IonInput>
+                            </IonItem>
+                            <IonItem>
+                                <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)} required></IonInput>
+                            </IonItem>
+                            <IonButton id='button' expand="block" type='submit' onClick={login}>Log In</IonButton>
 
-                        <p>Don't have an Account</p>
-                        <IonButton id='button' fill="outline" expand="block" routerLink='./register'>Sign Up</IonButton>
-                    </IonCardContent>
+                            <p>Don't have an Account</p>
+                            <IonButton id='button' fill="outline" expand="block" routerLink='./register'>Sign Up</IonButton>
+                        </IonCardContent>
                     </IonCard>
                 </div>
             </IonContent>
