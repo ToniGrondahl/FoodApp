@@ -18,7 +18,7 @@ const Antalanya: React.FC = () => {
                 <IonCard>
                     <IonCardContent>
                         <IonItem>
-                            <IonLabel>1. Pizza marghareta</IonLabel>
+                            <IonLabel>1. Margherita</IonLabel>
                             <IonLabel> 10,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -30,7 +30,7 @@ const Antalanya: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>2. Pepperoni deluxe</IonLabel>
+                            <IonLabel>2. Pepperoni</IonLabel>
                             <IonLabel> 12,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -43,7 +43,7 @@ const Antalanya: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>3. Vegetarian supreme</IonLabel>
+                            <IonLabel>3. Vegetarian</IonLabel>
                             <IonLabel> 11,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -57,7 +57,7 @@ const Antalanya: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>4. Pizza diavola</IonLabel>
+                            <IonLabel>4.Diavola</IonLabel>
                             <IonLabel> 13,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -71,7 +71,7 @@ const Antalanya: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>5. Meat lovers' feast</IonLabel>
+                            <IonLabel>5. Meat lovers'</IonLabel>
                             <IonLabel> 14,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
