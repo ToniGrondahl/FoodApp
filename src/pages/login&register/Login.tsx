@@ -22,15 +22,14 @@ const Login: React.FC = () => {
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [showError, setShowError] = useState(false);
-    
+   
     async function login() {
         const res = await loginUser(email, password)
         
 
         if (res === true) {
             presentToast("login succesful!")
-            setShowError(true);
+           
             
         } else {
             presentToast('Login failed! Please try again!')
@@ -56,7 +55,7 @@ const Login: React.FC = () => {
                             <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)} required></IonInput>
                         </IonItem>
                         <IonButton id='button' expand="block" type='submit' onClick={login}>Log In</IonButton>
-                        {showError ? <Redirect to="/home" /> : null}
+                       
                         <p>Don't have an Account</p>
                         <IonButton id='button' fill="outline" expand="block" routerLink='./register'>Sign Up</IonButton>
                     </IonCardContent>

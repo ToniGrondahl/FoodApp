@@ -1,12 +1,12 @@
 import { IonRouterLink } from '@ionic/react';
 import * as firebase from 'firebase/app';
 import {
-  GoogleAuthProvider,
+  
   getAuth,
-  signInWithPopup,
+  
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
-  sendPasswordResetEmail,
+ 
   signOut
 } from "firebase/auth"
 //import { Navigate } from 'react-router-dom';
@@ -32,7 +32,7 @@ export async function loginUser(username: string, password:string){
 
   try {
     const res = await signInWithEmailAndPassword(auth, username, password)
-    console.log(res)
+    
     
     return true
   } catch (error) {

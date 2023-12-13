@@ -9,8 +9,14 @@ import {
   IonTabs,
   setupIonicReact
 } from '@ionic/react';
+import {
+  getAuth
+} from "firebase/auth"
+import { loginUser } from './pages/login&register/firebase';
 import { homeOutline, restaurantOutline, searchOutline, personOutline, } from 'ionicons/icons';
 import { IonReactRouter } from '@ionic/react-router';
+import HideTabs from './components/HideNavbar'
+//Page routes
 import Home from './pages/Home';
 import Restaurants from './pages/Restaurants';
 import Search from './pages/Search';
@@ -48,20 +54,18 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+const currentPath = window.location.pathname;
+const hideTabsForLogin = currentPath === '/login' || currentPath === '/register' || currentPath === '/' ;
 
-setupIonicReact();
-
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>
+const routes = (
+  <>
           <Route exact path="/Login">
             <Login />
           </Route>
           <Route exact path="/Register">
             <Register />
           </Route>
+          
           <Route exact path="/home">
             <Home />
           </Route>
@@ -111,9 +115,23 @@ const App: React.FC = () => (
             <About />
           </Route>
           <Route exact path="/">
-            <Redirect to="/home" />
+            <Redirect to="/login" />
           </Route>
+  </>
+)
+
+setupIonicReact();
+
+const App: React.FC = () => (
+  <IonApp>
+    <IonReactRouter>
+      {hideTabsForLogin ?(<IonRouterOutlet>
+          {routes}
+        </IonRouterOutlet>) : (<IonTabs>
+        <IonRouterOutlet>
+          {routes}
         </IonRouterOutlet>
+        
         <IonTabBar slot="bottom">
           <IonTabButton tab="home" href="/home">
             <IonIcon aria-hidden="true" icon={homeOutline} />
@@ -132,9 +150,12 @@ const App: React.FC = () => (
             <IonLabel>Account</IonLabel>
           </IonTabButton>
         </IonTabBar>
-      </IonTabs>
+        
+      </IonTabs>)}
+      
     </IonReactRouter>
   </IonApp>
 );
 
 export default App;
+

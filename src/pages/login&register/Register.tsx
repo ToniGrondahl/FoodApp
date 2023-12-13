@@ -10,9 +10,8 @@ const Register: React.FC = () => {
     const [password, setPassword] = useState('')
     const [Cpassword, setCPassword] = useState('')
     const [email, setEmail] = useState('')
-    const [showError, setShowError] = useState(false);
     const [present] = useIonToast();
-
+    //Toast notification
     const presentToast = (message: string) => {
     present({
       message: message,
@@ -20,7 +19,8 @@ const Register: React.FC = () => {
       position:'bottom',
     });
   };
-
+  //--
+  //Validating registration
     async function registerUser() {
         if (password !== Cpassword){
             presentToast('Passwords do not match')
@@ -33,13 +33,13 @@ const Register: React.FC = () => {
     const res = await registerUserValidation(email, password)
     if (res === true) {
         presentToast('account created')
-        setShowError(true);
+        
     } else {
         presentToast('creating account failed')
        
     }
 }
-
+//--
     return (
       <IonPage>
         <IonContent >
@@ -55,12 +55,12 @@ const Register: React.FC = () => {
                         </IonItem>
                         <IonItem>
                             <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)}></IonInput>
+                            <p>Min. 6 characters</p>
                         </IonItem>
                         <IonItem>
                             <IonInput label="Password again" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
                         </IonItem>
                         <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
-                        {showError ? <Redirect to="/home" /> : null}
                         <p>Already have an account?  <Link to="./login"> Login</Link></p>
                     </IonCardContent>
                     </IonCard>
