@@ -12,7 +12,6 @@ import {
   IonCardContent,
   IonCardHeader,
   IonButton,
-  useIonViewWillEnter,
 } from '@ionic/react';
 import { GoogleMap } from '@capacitor/google-maps';
 

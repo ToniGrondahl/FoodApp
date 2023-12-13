@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonList>
+                <IonList inset={true} className='contactlist' >
                     <IonItem className="phone" lines='none'> <IonIcon className="phone-icon" aria-hidden="true" icon={callOutline} /> Phone Support </IonItem>
                     <IonText className='number'>050 1234567</IonText>
                     <IonItem className='email' lines='none'> <IonIcon className="email-icon" aria-hidden="true" icon={mailOutline} />  Email </IonItem>

@@ -41,7 +41,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/kalasipsi.jpeg' alt='fishChips' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='header'>Authentic Fish&Chips</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -59,7 +59,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/keittoa.jpeg' alt='keittoa' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='header'>Jouni's soup corner</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -80,7 +80,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/pizzza.jpeg' alt='pizza' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='header'>Antalanya Pizza</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -100,7 +100,7 @@ const Restaurants: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle className='headerSmall'>King sushi</IonCardTitle>
 
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -122,7 +122,7 @@ const Restaurants: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle className='headerSmall'>Cafe Ursus</IonCardTitle>
 
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -142,7 +142,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/Tartarillas.jpeg' alt='Tartarilla' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='headerSmall'>Tartarilla's</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>

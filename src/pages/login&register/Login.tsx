@@ -46,7 +46,7 @@ const Login: React.FC = () => {
                 <div className="flex-center" id='redirect'>
                     <IonCard>
                         <IonCardHeader>
-                            <IonCardTitle>Food App</IonCardTitle>
+                            <IonCardTitle className='cardtitle'>Food App</IonCardTitle>
                         </IonCardHeader>
                         <IonCardContent>
                             <IonItem>
@@ -57,7 +57,7 @@ const Login: React.FC = () => {
                             </IonItem>
                             <IonButton id='button' expand="block" type='submit' onClick={login}>Log In</IonButton>
                             {showError ? <Redirect to="/home" /> : null}
-                            <p>Don't have an Account</p>
+                            <p>Don't have an Account?</p>
                             <IonButton id='button' fill="outline" expand="block" routerLink='./register'>Sign Up</IonButton>
                         </IonCardContent>
                     </IonCard>

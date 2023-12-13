@@ -23,8 +23,8 @@ const About: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent className='content'>
-                <IonList className='yapping'>Our restaurant app is designed to find restaurants and place orders in them.
-                    It was founded and created by four friends who wanted to make finding restaurants and ordering from them more convenient.
+                <IonList inset={true} className='abouttext'>Our restaurant app is designed to emulate a food ordering app. It's idea is to find restaurants and place orders in them.
+                    It was created by four friends who wanted to make finding restaurants and ordering from them more convenient.
                 </IonList>
             </IonContent>
         </IonPage>

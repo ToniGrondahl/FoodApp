@@ -3,8 +3,6 @@ img {
     width: 100px;
 }
 
-
-
 .restaurants {
     text-align: center;
 }
@@ -13,30 +11,30 @@ img {
 
     width: 175px;
     height: 310px;
-    
-
     border-radius: 6%;
 }
 
 .images {
-
     border-radius: 10%;
     display: block;
     margin: 0 auto;
     text-align: center;
-    
+    padding-top: 5px;
+
 }
 
 .header {
-
-   text-align: center;
+    text-align: center;
 }
 
 .headerSmall {
-
     padding-bottom: 20px;
     padding-top: 5px;
     text-align: center;
+}
+
+.rating {
+    padding-left: 10px;
 }
 
 .stara {
@@ -51,69 +49,57 @@ img {
     color: yellow;
 }
 
-
-
-
 .buttoninfo {
-
     border-radius: 10%;
-    
     margin: 0 60px;
-
     margin-bottom: 5px;
-    
 }
 
 .buttonmenu {
-
     border-radius: 10%;
-    
     margin: 0 35px;
-    
-    
 }
 
 .popCloseButton {
-    width: 20px; 
+    width: 20px;
     height: 20px;
-    border-radius: 50%; 
-    background-color: black; 
-    color: white; 
+    border-radius: 50%;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px; 
+    font-size: 15px;
     cursor: pointer;
     position: fixed;
     top: 2%;
-    left: 2%; }
+    left: 2%;
+}
 
-    .popHeader {
-        text-align: center;
-    }
+.popHeader {
+    text-align: center;
+}
 
-    /* styles.css or your component's CSS file */
-    .custom-modal {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 70vw;
-        max-height: 20vh;
-        width: auto !important;
-        height: auto !important;
-        border-radius: 8%;
-      }
-  
-    .popToolbar{
-        --ion-toolbar-md-min-height: 80px; /* Set the desired minimum height for Android */
-         --ion-toolbar-ios-min-height: 80px;
-    }
+/* styles.css or your component's CSS file */
+.custom-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70vw;
+    max-height: 20vh;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 8%;
+}
 
-    .RestaurantInfo{
-        font-size: 13px;
-        padding: 2px;
-    }
+.popToolbar {
+    --ion-toolbar-md-min-height: 80px;
+    /* Set the desired minimum height for Android */
+    --ion-toolbar-ios-min-height: 80px;
+}
 
-
-
+.RestaurantInfo {
+    font-size: 13px;
+    padding: 2px;
+}

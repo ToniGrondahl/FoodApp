@@ -59,9 +59,9 @@ const Home: React.FC = () => {
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
-            </IonItem>
+          </IonItem>
         </IonCard>
-       
+
         <IonCard routerLink='/kingsushi'>
           <IonCardHeader>
             <img className='cardimage' src='images/sushi.jpg' alt='sushi' />
@@ -74,17 +74,8 @@ const Home: React.FC = () => {
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='stara' icon={star} > </IonIcon>
             <IonIcon className='tyhjaStara' icon={starOutline}></IonIcon>
-            </IonItem>
+          </IonItem>
         </IonCard>
-        
-
-
-
-
-
-
-
-
       </IonContent>
     </IonPage >
   );

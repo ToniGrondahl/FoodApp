@@ -46,7 +46,7 @@ const Register: React.FC = () => {
                 <div className="flex-center">
                     <IonCard>
                         <IonCardHeader>
-                            <IonCardTitle>Create account</IonCardTitle>
+                            <IonCardTitle className='cardtitle'>Create account</IonCardTitle>
                         </IonCardHeader>
                         <IonCardContent>
 
@@ -61,7 +61,8 @@ const Register: React.FC = () => {
                             </IonItem>
                             <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
                             {showError ? <Redirect to="/home" /> : null}
-                            <p>Already have an account?  <Link to="./login"> Login</Link></p>
+                            <p>Already have an account? </p>
+                            <p><Link to="./login"> Login</Link></p>
                         </IonCardContent>
                     </IonCard>
                 </div>
