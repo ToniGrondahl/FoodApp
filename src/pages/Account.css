@@ -1,6 +1,6 @@
 .settings-icon {
     padding-right: 10px;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .settings {
@@ -9,7 +9,7 @@
 
 .phone-icon {
     padding-right: 10px;
-    font-size: 24px;
+    font-size: 50px;
 }
 
 .contact {
@@ -18,7 +18,7 @@
 
 .about-icon {
     padding-right: 10px;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .about {
@@ -39,9 +39,4 @@
 .account {
     text-align: center;
     font-size: 22px;
-    padding-top: 30px;
-}
-
-.toolbar {
-    padding-bottom: 26px;
 }

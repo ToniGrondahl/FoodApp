@@ -4,11 +4,13 @@
   align-items: center;
   height: 100%;
 }
+
 p {
   display: flex;
   padding: 2px;
   justify-content: center;
 }
+
 #button {
   margin-top: 5px;
 }

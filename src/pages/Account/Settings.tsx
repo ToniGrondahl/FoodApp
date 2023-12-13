@@ -1,7 +1,7 @@
 import { useState, useEffect, } from 'react';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonToggle, IonButton, IonIcon } from '@ionic/react'
 import type { ToggleCustomEvent } from '@ionic/react';
-import { moonOutline, notificationsOutline, textOutline, chevronBackOutline } from 'ionicons/icons';
+import { moonOutline, notificationsOutline, chevronBackOutline, mailOutline } from 'ionicons/icons';
 import './Settings.css';
 
 function Settings() {
@@ -62,16 +62,16 @@ function Settings() {
                             aria-label='Tertiary toggle'
                             justify='space-between'>
                             <IonIcon className='notifications' icon={notificationsOutline} ></IonIcon>
-                            Enable push notifications
+                            Enable Push Notifications
                         </IonToggle>
                     </IonItem>
-                    <IonItem className='BiggerFont'>
+                    <IonItem className='Email'>
                         <IonToggle
                             color="tertiary"
                             aria-label='Tertiary toggle'
                             justify='space-between'>
-                            <IonIcon className='font-icon' icon={textOutline} ></IonIcon>
-                            Bigger font
+                            <IonIcon className='email-icon' icon={mailOutline} ></IonIcon>
+                            Receive Emails
                         </IonToggle>
                     </IonItem>
                 </IonList>

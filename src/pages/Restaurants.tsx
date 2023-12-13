@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { star, starHalf, starOutline } from 'ionicons/icons';
 import {
   IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader,
@@ -12,7 +11,6 @@ const Restaurants: React.FC = () => {
 
   const [showModal, setShowModal] = useState(false);
   const [selectedRestaurantInfo, setSelectedRestaurantInfo] = useState('');
-  const history = useHistory();
 
   const handleInfoClick = (info: string) => {
     setSelectedRestaurantInfo(info);
@@ -22,10 +20,6 @@ const Restaurants: React.FC = () => {
   const handleCloseModal = () => {
     setShowModal(false);
     setSelectedRestaurantInfo('');
-  };
-
-  const handleMenuButtonClick = (route: string) => {
-    history.push(route);
   };
 
   return (
@@ -47,7 +41,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/kalasipsi.jpeg' alt='fishChips' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='header'>Authentic Fish&Chips</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -56,7 +50,7 @@ const Restaurants: React.FC = () => {
                   </IonItem>
                 </IonCardHeader>
                 <IonButton expand="block" color="success" size="small" className='buttoninfo' onClick={() => handleInfoClick('Welcome to taste autenthic Fish&Chips straight from Brighton. Believe it or not we also have Vegan and Dairy free options')}>Info</IonButton>
-                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' onClick={() => handleMenuButtonClick('/fish&chips')}>Menu</IonButton>
+                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' routerLink='/fish&chips'>Menu</IonButton>
               </IonCard>
             </IonCol>
 
@@ -65,7 +59,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/keittoa.jpeg' alt='keittoa' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='header'>Jouni's soup corner</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -75,7 +69,7 @@ const Restaurants: React.FC = () => {
                 </IonCardHeader>
                 <IonButton expand="block" color="success" size="small" className='buttoninfo'
                   onClick={() => handleInfoClick('Jounis soup corner serves you good variety of mouth watering soups. We have Vegan, Dairy free and Gluten free options')}>Info</IonButton>
-                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' onClick={() => handleMenuButtonClick('/jouninkeitto')}>Menu</IonButton>
+                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' routerLink='/jouninkeitto'>Menu</IonButton>
               </IonCard>
             </IonCol>
           </IonRow>
@@ -86,7 +80,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/pizzza.jpeg' alt='pizza' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='header'>Antalanya Pizza</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -96,7 +90,7 @@ const Restaurants: React.FC = () => {
                 </IonCardHeader>
                 <IonButton expand="block" color="success" size="small" className='buttoninfo'
                   onClick={() => handleInfoClick('Antalanya pizza was nominated for the best Pizza in Finland 2020. Fresh ingredients every day')}>Info</IonButton>
-                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' onClick={() => handleMenuButtonClick('/antalanya')}>Menu</IonButton>
+                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' routerLink='/antalanya'>Menu</IonButton>
               </IonCard>
             </IonCol>
 
@@ -106,7 +100,7 @@ const Restaurants: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle className='headerSmall'>King sushi</IonCardTitle>
 
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -116,7 +110,7 @@ const Restaurants: React.FC = () => {
                 </IonCardHeader>
                 <IonButton expand="block" color="success" size="small" className='buttoninfo'
                   onClick={() => handleInfoClick('We at King Sushi believe that customer is always right. Good variety of dishes and cheap buffet 10:00-15:00')}>Info</IonButton>
-                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' onClick={() => handleMenuButtonClick('/kingsushi')}>Menu</IonButton>
+                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' routerLink='/kingsushi'>Menu</IonButton>
               </IonCard>
             </IonCol>
           </IonRow>
@@ -128,7 +122,7 @@ const Restaurants: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle className='headerSmall'>Cafe Ursus</IonCardTitle>
 
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -139,7 +133,7 @@ const Restaurants: React.FC = () => {
 
                 <IonButton expand="block" color="success" size="small" className='buttoninfo'
                   onClick={() => handleInfoClick('Fresh pasteries and handmade Smoothies. Also fresh and absolutely best Coffee only 1€ 08:00-10:00')}>Info</IonButton>
-                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' onClick={() => handleMenuButtonClick('/cafeursus')}>Menu</IonButton>
+                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' routerLink='/cafeursus'>Menu</IonButton>
               </IonCard>
             </IonCol>
 
@@ -148,7 +142,7 @@ const Restaurants: React.FC = () => {
                 <img src='images/Tartarillas.jpeg' alt='Tartarilla' className='images' />
                 <IonCardHeader>
                   <IonCardTitle className='headerSmall'>Tartarilla's</IonCardTitle>
-                  <IonItem lines='none'>
+                  <IonItem className='rating' lines='none'>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
                     <IonIcon icon={star} size='small' className='stara'> </IonIcon>
@@ -158,7 +152,7 @@ const Restaurants: React.FC = () => {
                 </IonCardHeader>
                 <IonButton expand="block" color="success" size="small" className='buttoninfo'
                   onClick={() => handleInfoClick('We serve real and tasty Mexican food made with love. We have Gluten free, Vegan and Dairy free options')}>Info</IonButton>
-                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' onClick={() => handleMenuButtonClick('/tartarillas')}>Menu</IonButton>
+                <IonButton expand="block" color="tertiary" size="default" className='buttonmenu' routerLink='/tartarillas'>Menu</IonButton>
               </IonCard>
             </IonCol>
           </IonRow>

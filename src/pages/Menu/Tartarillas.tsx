@@ -9,9 +9,9 @@ const Tartarillas: React.FC = () => {
             <IonContent fullscreen>
 
                 <IonHeader>
-                    <img className='kuva' alt="tartarillas" src='images/Tartarillas.jpeg' />
+                    <img className='kuva' alt="keittoa" src='images/Tartarillas.jpeg' />
                     <IonToolbar color="tertiary">
-                        <IonTitle className='Menu'>Tartarilla's</IonTitle>
+                        <IonTitle className='Menu'>Tartarillas</IonTitle>
                     </IonToolbar>
                 </IonHeader>
 
@@ -19,8 +19,8 @@ const Tartarillas: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>1. Nigiri sushi</IonLabel>
-                            <IonLabel> 2,50€ per piece</IonLabel>
+                            <IonLabel>1. Two Taco's</IonLabel>
+                            <IonLabel> 9,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>
@@ -33,36 +33,7 @@ const Tartarillas: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>2. Sashimi platter</IonLabel>
-                            <IonLabel> 18,99€</IonLabel>
-                            <IonButton routerLink='/checkout' color='success'>
-                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
-                            </IonButton>
-                        </IonItem>
-
-                    </IonCardContent>
-                </IonCard>
-
-
-                <IonCard>
-                    <IonCardContent>
-
-                        <IonItem>
-                            <IonLabel>3. Dragon roll</IonLabel>
-                            <IonLabel> 14,99€</IonLabel>
-                            <IonButton routerLink='/checkout' color='success'>
-                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
-                            </IonButton>
-                        </IonItem>
-
-                    </IonCardContent>
-                </IonCard>
-
-                <IonCard>
-                    <IonCardContent>
-
-                        <IonItem>
-                            <IonLabel>4. Vegetarian Maki</IonLabel>
+                            <IonLabel>2. Chicken burrito</IonLabel>
                             <IonLabel> 10,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -72,12 +43,41 @@ const Tartarillas: React.FC = () => {
                     </IonCardContent>
                 </IonCard>
 
+
                 <IonCard>
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>5. Chef's Special Roll</IonLabel>
-                            <IonLabel> 16,99€</IonLabel>
+                            <IonLabel>3. Beef burrito</IonLabel>
+                            <IonLabel> 11,99€</IonLabel>
+                            <IonButton routerLink='/checkout' color='success'>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
+
+                    </IonCardContent>
+                </IonCard>
+
+                <IonCard>
+                    <IonCardContent>
+
+                        <IonItem>
+                            <IonLabel>4. Quesadilla's</IonLabel>
+                            <IonLabel> 7,99€</IonLabel>
+                            <IonButton routerLink='/checkout' color='success'>
+                                <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
+                            </IonButton>
+                        </IonItem>
+
+                    </IonCardContent>
+                </IonCard>
+
+                <IonCard>
+                    <IonCardContent>
+
+                        <IonItem>
+                            <IonLabel>5. Cheesy fries</IonLabel>
+                            <IonLabel> 3,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
                             </IonButton>

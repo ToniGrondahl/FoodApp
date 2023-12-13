@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import {IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton, useIonToast  } from '@ionic/react';
+import { IonCardContent, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput, IonItem, IonList, IonButton, useIonToast } from '@ionic/react';
 import './Register.css';
 import { useState } from 'react';
 import { registerUserValidation } from './firebase'
@@ -22,13 +22,13 @@ const Register: React.FC = () => {
   //--
   //Validating registration
     async function registerUser() {
-        if (password !== Cpassword){
+        if (password !== Cpassword) {
             presentToast('Passwords do not match')
-            
-    } if (email.trim() === '' || password.trim() === '') {
+
+        } if (email.trim() === '' || password.trim() === '') {
             presentToast('Email and password are required')
-           
-    }
+
+        }
 
     const res = await registerUserValidation(email, password)
     if (res === true) {
@@ -39,7 +39,7 @@ const Register: React.FC = () => {
        
     }
 }
-//--
+
     return (
       <IonPage>
         <IonContent >
@@ -55,19 +55,19 @@ const Register: React.FC = () => {
                         </IonItem>
                         <IonItem>
                             <IonInput label="Password" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setPassword(e.target.value)}></IonInput>
-                            <p>Min. 6 characters</p>
                         </IonItem>
                         <IonItem>
                             <IonInput label="Password again" type="password" labelPlacement="stacked" placeholder="*****" onIonChange={(e: any) => setCPassword(e.target.value)}></IonInput>
                         </IonItem>
                         <IonButton id='button' expand="block" type='submit' onClick={registerUser}>Sign Up</IonButton>
+                        
                         <p>Already have an account?  <Link to="./login"> Login</Link></p>
                     </IonCardContent>
                     </IonCard>
-            </div>
-        </IonContent>
-    </IonPage>
+                </div>
+            </IonContent>
+        </IonPage>
     );
-  };
-  
-  export default Register;
+};
+
+export default Register;

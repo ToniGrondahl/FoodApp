@@ -27,8 +27,6 @@ import Settings from './pages/Account/Settings';
 import Contact from './pages/Account/Contact';
 import About from './pages/Account/About';
 import Checkout from './pages/Checkout';
-import Paymentmethod from './pages/Paymentmethod';
-import Deliveryaddress from './pages/Deliveryaddress';
 import Jouninkeitto from './pages/Menu/Jouninkeitto';
 import Kingsushi from './pages/Menu/Kingsushi';
 import FishAndChips from './pages/Menu/Fish&chips';
@@ -84,20 +82,14 @@ const routes = (
           <Route exact path="/fish&chips">
             <FishAndChips />
           </Route>
-          <Route exact path="/antalanyapizzeria">
+          <Route exact path="/antalanya">
             <Antalanya />
           </Route>
           <Route exact path="/cafeursus">
             <Cafeursus />
           </Route>
-          <Route exact path="tartarillas">
+          <Route exact path="/tartarillas">
             <Tartarillas />
-          </Route>
-          <Route exact path="/Paymentmethod">
-            <Paymentmethod />
-          </Route>
-          <Route exact path="/deliveryaddress">
-            <Deliveryaddress />
           </Route>
           <Route path="/search">
             <Search />

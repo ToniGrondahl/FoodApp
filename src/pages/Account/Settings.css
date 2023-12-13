@@ -21,12 +21,11 @@
     padding-right: 10px;
 }
 
-.font-icon {
-    font-size: 24px;
-    padding-right: 10px;
+.email-icon {
+    font-size: small;
 }
 
-.BiggerFont {
+.Email {
     font-size: large;
 }
 

@@ -19,7 +19,7 @@ const FishAndChips: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>1. Classic fish and chips</IonLabel>
+                            <IonLabel>1. Classic F&C</IonLabel>
                             <IonLabel> 12,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -33,7 +33,7 @@ const FishAndChips: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>2. Grilled Lemon Herb Salmon</IonLabel>
+                            <IonLabel>2. Lemon Salmon</IonLabel>
                             <IonLabel> 15,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
@@ -76,7 +76,7 @@ const FishAndChips: React.FC = () => {
                     <IonCardContent>
 
                         <IonItem>
-                            <IonLabel>5. Vegetarian Fish and Chips</IonLabel>
+                            <IonLabel>5. Vegetarian F&C</IonLabel>
                             <IonLabel> 13,99€</IonLabel>
                             <IonButton routerLink='/checkout' color='success'>
                                 <IonIcon slot="icon-only" icon={cartOutline}></IonIcon>
